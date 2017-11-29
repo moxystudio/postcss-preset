@@ -18,6 +18,7 @@ Object {
     Array [
       "postcss-css-variables",
     ],
+    "postcss-conditionals",
     Array [
       "postcss-cssnext",
       Object {
@@ -54,6 +55,7 @@ Object {
     Array [
       "postcss-css-variables",
     ],
+    "postcss-conditionals",
     Array [
       "postcss-cssnext",
       Object {
@@ -90,6 +92,7 @@ Object {
     Array [
       "postcss-css-variables",
     ],
+    "postcss-conditionals",
     Array [
       "postcss-cssnext",
       Object {
