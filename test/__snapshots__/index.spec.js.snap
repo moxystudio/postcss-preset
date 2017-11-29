@@ -9,7 +9,12 @@ Object {
         "path": undefined,
       },
     ],
-    "postcss-mixins",
+    Array [
+      "postcss-mixins",
+      Object {
+        "mixinsDir": undefined,
+      },
+    ],
     Array [
       "postcss-css-variables",
     ],
@@ -40,7 +45,48 @@ Object {
         "path": "foo",
       },
     ],
-    "postcss-mixins",
+    Array [
+      "postcss-mixins",
+      Object {
+        "mixinsDir": undefined,
+      },
+    ],
+    Array [
+      "postcss-css-variables",
+    ],
+    Array [
+      "postcss-cssnext",
+      Object {
+        "features": Object {
+          "autoprefixer": Object {
+            "remove": false,
+          },
+          "browsers": Array [
+            "extends browserslist-config-google",
+          ],
+          "customProperties": false,
+        },
+      },
+    ],
+  ],
+}
+`;
+
+exports[`should pass options.mixinsPath to postcss-mixins  1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "postcss-import",
+      Object {
+        "path": undefined,
+      },
+    ],
+    Array [
+      "postcss-mixins",
+      Object {
+        "mixinsDir": "foo",
+      },
+    ],
     Array [
       "postcss-css-variables",
     ],
