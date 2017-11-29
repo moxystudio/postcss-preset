@@ -3,6 +3,7 @@
 module.exports = (options) => {
     options = {
         importPath: undefined,
+        mixinsPath: undefined,
         ...options,
     };
 
@@ -14,7 +15,9 @@ module.exports = (options) => {
                 path: options.importPath,
             }),
             // Add support for CSS mixins
-            require('postcss-mixins'),
+            require('postcss-mixins')({
+                mixinsDir: options.mixinsPath,
+            }),
             // Add support for CSS variables using postcss-css-variables
             // instead of cssnext one, which is more powerful
             require('postcss-css-variables')(),

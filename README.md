@@ -49,6 +49,7 @@ module.exports = require('postcss-preset-moxy')();
 ```js
 module.exports = require('postcss-preset-moxy')({
     importPath: './src/styles',
+    mixinsPath: './src/styles/imports/mixins',
 });
 ```
 
@@ -57,6 +58,7 @@ Available options:
 | Name   | Description   | Type     | Default |
 | ------ | ------------- | -------- | ------- |
 | importPath | The path to pass to [postcss-import](https://github.com/postcss/postcss-import#path) | string/Array | undefined |
+| mixinsPath | The path to pass to [postcss-mixins](https://github.com/postcss/postcss-mixins#mixinsdir) | string/Array | undefined |
 
 
 ## Tests

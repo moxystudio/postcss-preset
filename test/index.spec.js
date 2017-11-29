@@ -3,7 +3,7 @@
 const preset = require('..');
 
 jest.mock('postcss-import', () => (options) => ['postcss-import', options].filter((val) => val));
-jest.mock('postcss-mixins', () => 'postcss-mixins');
+jest.mock('postcss-mixins', () => (options) => ['postcss-mixins', options].filter((val) => val));
 jest.mock('postcss-css-variables', () => (options) => ['postcss-css-variables', options].filter((val) => val));
 jest.mock('postcss-cssnext', () => (options) => ['postcss-cssnext', options].filter((val) => val));
 
@@ -15,4 +15,8 @@ it('should have a good base config', () => {
 
 it('should pass options.importPath to postcss-import ', () => {
     expect(preset({ importPath: 'foo' })).toMatchSnapshot();
+});
+
+it('should pass options.mixinsPath to postcss-mixins ', () => {
+    expect(preset({ mixinsPath: 'foo' })).toMatchSnapshot();
 });
