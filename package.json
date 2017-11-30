@@ -1,7 +1,7 @@
 {
   "name": "postcss-preset-moxy",
   "description": "PostCSS preset to be used at MOXY",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "keywords": [
     "postcss",
     "preset",
