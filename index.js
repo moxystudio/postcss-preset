@@ -18,6 +18,7 @@ module.exports = (options) => {
             require('postcss-mixins')({
                 mixinsDir: options.mixinsPath,
             }),
+            require('postcss-for')(),
             // Add support for CSS variables using postcss-css-variables
             // instead of cssnext one, which is more powerful
             require('postcss-css-variables')(),
