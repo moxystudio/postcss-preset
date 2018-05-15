@@ -4,6 +4,7 @@ module.exports = (options) => {
     options = {
         importPath: undefined,
         mixinsPath: undefined,
+        browsers: ['extends browserslist-config-google'],
         ...options,
     };
 
@@ -28,7 +29,7 @@ module.exports = (options) => {
             require('postcss-cssnext')({
                 features: {
                     customProperties: false, // We are using postcss-css-variables instead
-                    browsers: ['extends browserslist-config-google'],
+                    browsers: options.browsers,
                     autoprefixer: {
                         remove: false, // No problem disabling, we use prefixes when really necessary
                     },

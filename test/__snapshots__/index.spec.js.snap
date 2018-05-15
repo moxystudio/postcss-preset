@@ -38,6 +38,42 @@ Object {
 }
 `;
 
+exports[`should pass options.browsers to postcss-cssnext  1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "postcss-import",
+      Object {
+        "path": undefined,
+      },
+    ],
+    Array [
+      "postcss-mixins",
+      Object {
+        "mixinsDir": undefined,
+      },
+    ],
+    "postcss-for",
+    Array [
+      "postcss-css-variables",
+    ],
+    "postcss-conditionals",
+    Array [
+      "postcss-cssnext",
+      Object {
+        "features": Object {
+          "autoprefixer": Object {
+            "remove": false,
+          },
+          "browsers": "foo",
+          "customProperties": false,
+        },
+      },
+    ],
+  ],
+}
+`;
+
 exports[`should pass options.importPath to postcss-import  1`] = `
 Object {
   "plugins": Array [

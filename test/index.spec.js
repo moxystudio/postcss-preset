@@ -22,3 +22,7 @@ it('should pass options.importPath to postcss-import ', () => {
 it('should pass options.mixinsPath to postcss-mixins ', () => {
     expect(preset({ mixinsPath: 'foo' })).toMatchSnapshot();
 });
+
+it('should pass options.browsers to postcss-cssnext ', () => {
+    expect(preset({ browsers: 'foo' })).toMatchSnapshot();
+});
