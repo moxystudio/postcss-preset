@@ -61,6 +61,7 @@ Available options:
 | ------ | ------------- | -------- | ------- |
 | importPath | The path to pass to [postcss-import](https://github.com/postcss/postcss-import#path) | string/Array | undefined |
 | mixinsPath | The path to pass to [postcss-mixins](https://github.com/postcss/postcss-mixins#mixinsdir) | string/Array | undefined |
+| browsers | Supported browsers list to pass to [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) | Array | [browserslist-config-google](https://github.com/awkaiser/browserslist-config-google) |
 
 
 ## Tests
