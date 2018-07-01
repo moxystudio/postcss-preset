@@ -1,5 +1,11 @@
 'use strict';
 
+const cssNextFeatures = require('postcss-cssnext/lib/features');
+
+// Replace 'postcss-custom-properties' with 'postcss-css-variables', which is more powerful
+// This is a ugly hack but must be done this way because of the postcss plugins ordering
+cssNextFeatures.default.customProperties = (options) => require('postcss-css-variables')(options);
+
 module.exports = (options) => {
     options = {
         importPath: undefined,
@@ -24,16 +30,12 @@ module.exports = (options) => {
             // Use CSS next, disabling some features
             require('postcss-cssnext')({
                 features: {
-                    customProperties: false, // We are using postcss-css-variables instead
                     browsers: options.browsers,
                     autoprefixer: {
                         remove: false, // No problem disabling, we use prefixes when really necessary
                     },
                 },
             }),
-            // Add support for CSS variables using postcss-css-variables
-            // instead of cssnext one, which is more powerful
-            require('postcss-css-variables')(),
         ],
     };
 };

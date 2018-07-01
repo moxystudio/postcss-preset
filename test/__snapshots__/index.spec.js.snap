@@ -26,12 +26,8 @@ Object {
           "browsers": Array [
             "extends browserslist-config-google",
           ],
-          "customProperties": false,
         },
       },
-    ],
-    Array [
-      "postcss-css-variables",
     ],
   ],
 }
@@ -61,12 +57,8 @@ Object {
             "remove": false,
           },
           "browsers": "foo",
-          "customProperties": false,
         },
       },
-    ],
-    Array [
-      "postcss-css-variables",
     ],
   ],
 }
@@ -98,12 +90,8 @@ Object {
           "browsers": Array [
             "extends browserslist-config-google",
           ],
-          "customProperties": false,
         },
       },
-    ],
-    Array [
-      "postcss-css-variables",
     ],
   ],
 }
@@ -135,12 +123,8 @@ Object {
           "browsers": Array [
             "extends browserslist-config-google",
           ],
-          "customProperties": false,
         },
       },
-    ],
-    Array [
-      "postcss-css-variables",
     ],
   ],
 }
