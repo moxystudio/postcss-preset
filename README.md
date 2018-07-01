@@ -33,7 +33,6 @@ If you are developing a project that uses new CSS language features and must wor
 - You can use any features from [cssnext](http://cssnext.io/)
 - Enables [postcss-import](https://github.com/postcss/postcss-import) so that `@import` statements are inlined
 - Enables [postcss-mixins](https://github.com/postcss/postcss-mixins) so that you can define mixins
-- Enables [postcss-conditionals](https://github.com/andyjansson/postcss-conditionals) so that you can define `@if` statements
 - Enables [postcss-for](https://github.com/antyakushev/postcss-for) so that you can use `@for` loop
 - Enables [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables) instead of [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) because it's [more complete](https://github.com/MadLittleMods/postcss-css-variables#differences-from-postcss-custom-properties).
 

@@ -19,12 +19,8 @@ module.exports = (options) => {
             require('postcss-mixins')({
                 mixinsDir: options.mixinsPath,
             }),
+            // Add support for for loops
             require('postcss-for')(),
-            // Add support for CSS variables using postcss-css-variables
-            // instead of cssnext one, which is more powerful
-            require('postcss-css-variables')(),
-            // Add support for CSS conditionals using postcss-conditionals
-            require('postcss-conditionals')(),
             // Use CSS next, disabling some features
             require('postcss-cssnext')({
                 features: {
@@ -35,6 +31,9 @@ module.exports = (options) => {
                     },
                 },
             }),
+            // Add support for CSS variables using postcss-css-variables
+            // instead of cssnext one, which is more powerful
+            require('postcss-css-variables')(),
         ],
     };
 };

@@ -17,10 +17,6 @@ Object {
     ],
     "postcss-for",
     Array [
-      "postcss-css-variables",
-    ],
-    "postcss-conditionals",
-    Array [
       "postcss-cssnext",
       Object {
         "features": Object {
@@ -33,6 +29,9 @@ Object {
           "customProperties": false,
         },
       },
+    ],
+    Array [
+      "postcss-css-variables",
     ],
   ],
 }
@@ -55,10 +54,6 @@ Object {
     ],
     "postcss-for",
     Array [
-      "postcss-css-variables",
-    ],
-    "postcss-conditionals",
-    Array [
       "postcss-cssnext",
       Object {
         "features": Object {
@@ -69,6 +64,9 @@ Object {
           "customProperties": false,
         },
       },
+    ],
+    Array [
+      "postcss-css-variables",
     ],
   ],
 }
@@ -91,10 +89,6 @@ Object {
     ],
     "postcss-for",
     Array [
-      "postcss-css-variables",
-    ],
-    "postcss-conditionals",
-    Array [
       "postcss-cssnext",
       Object {
         "features": Object {
@@ -107,6 +101,9 @@ Object {
           "customProperties": false,
         },
       },
+    ],
+    Array [
+      "postcss-css-variables",
     ],
   ],
 }
@@ -129,10 +126,6 @@ Object {
     ],
     "postcss-for",
     Array [
-      "postcss-css-variables",
-    ],
-    "postcss-conditionals",
-    Array [
       "postcss-cssnext",
       Object {
         "features": Object {
@@ -145,6 +138,9 @@ Object {
           "customProperties": false,
         },
       },
+    ],
+    Array [
+      "postcss-css-variables",
     ],
   ],
 }
