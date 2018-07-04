@@ -68,7 +68,7 @@ The [postcss-url](https://github.com/postcss/postcss-url) plugin is disabled by 
 
 ```js
 module.exports = require('postcss-preset-moxy')({
-    url: true // or pass custom options to the url plugin
+    url: true // instead of `true`, you may pass any options to the url plugin
 });
 ```
 
