@@ -32,6 +32,7 @@ If you are developing a project that uses new CSS language features and must wor
 
 - You can use any features from [cssnext](http://cssnext.io/)
 - Enables [postcss-import](https://github.com/postcss/postcss-import) so that `@import` statements are inlined
+- Optionally enables [postcss-url](https://github.com/postcss/postcss-url) so that `url()` statements are processed
 - Enables [postcss-mixins](https://github.com/postcss/postcss-mixins) so that you can define mixins
 - Enables [postcss-for](https://github.com/antyakushev/postcss-for) so that you can use `@for` loop
 - Enables [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables) instead of [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) because it's [more complete](https://github.com/MadLittleMods/postcss-css-variables#differences-from-postcss-custom-properties).
@@ -60,8 +61,16 @@ Available options:
 | ------ | ------------- | -------- | ------- |
 | importPath | The path to pass to [postcss-import](https://github.com/postcss/postcss-import#path) | string/Array | undefined |
 | mixinsPath | The path to pass to [postcss-mixins](https://github.com/postcss/postcss-mixins#mixinsdir) | string/Array | undefined |
+| url | Options to pass to [postcss-url](https://github.com/postcss/postcss-mixins#mixinsdir) | boolean/Array/Object | false |
 | browsers | Supported browsers list to pass to [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) | Array | [browserslist-config-google](https://github.com/awkaiser/browserslist-config-google) |
 
+The [postcss-url](https://github.com/postcss/postcss-url) plugin is disabled by default. You may activate it like so:
+
+```js
+module.exports = require('postcss-preset-moxy')({
+    url: true // or pass custom options to the url plugin
+});
+```
 
 ## Tests
 

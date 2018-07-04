@@ -1,5 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should enable postcss-url if options.url is true 1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "postcss-import",
+      Object {
+        "path": undefined,
+      },
+    ],
+    Array [
+      "postcss-url",
+    ],
+    Array [
+      "postcss-mixins",
+      Object {
+        "mixinsDir": undefined,
+      },
+    ],
+    "postcss-for",
+    Array [
+      "postcss-cssnext",
+      Object {
+        "features": Object {
+          "autoprefixer": Object {
+            "remove": false,
+          },
+          "browsers": Array [
+            "extends browserslist-config-google",
+          ],
+        },
+      },
+    ],
+  ],
+}
+`;
+
 exports[`should have a good base config 1`] = `
 Object {
   "plugins": Array [
@@ -110,6 +146,45 @@ Object {
       "postcss-mixins",
       Object {
         "mixinsDir": "foo",
+      },
+    ],
+    "postcss-for",
+    Array [
+      "postcss-cssnext",
+      Object {
+        "features": Object {
+          "autoprefixer": Object {
+            "remove": false,
+          },
+          "browsers": Array [
+            "extends browserslist-config-google",
+          ],
+        },
+      },
+    ],
+  ],
+}
+`;
+
+exports[`should pass options.url to postcss-url 1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "postcss-import",
+      Object {
+        "path": undefined,
+      },
+    ],
+    Array [
+      "postcss-url",
+      Object {
+        "foo": "bar",
+      },
+    ],
+    Array [
+      "postcss-mixins",
+      Object {
+        "mixinsDir": undefined,
       },
     ],
     "postcss-for",

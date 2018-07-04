@@ -11,6 +11,7 @@ module.exports = (options) => {
         importPath: undefined,
         mixinsPath: undefined,
         browsers: ['extends browserslist-config-google'],
+        url: false,
         ...options,
     };
 
@@ -21,6 +22,8 @@ module.exports = (options) => {
                 // Any non-relative imports are resolved to this path
                 path: options.importPath,
             }),
+            // Process url() statements
+            options.url && require('postcss-url')(options.url !== true ? options.url : undefined),
             // Add support for CSS mixins
             require('postcss-mixins')({
                 mixinsDir: options.mixinsPath,
@@ -36,6 +39,6 @@ module.exports = (options) => {
                     },
                 },
             }),
-        ],
+        ].filter(Boolean),
     };
 };

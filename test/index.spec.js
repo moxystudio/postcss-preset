@@ -3,6 +3,7 @@
 const preset = require('..');
 
 jest.mock('postcss-import', () => (options) => ['postcss-import', options].filter((val) => val));
+jest.mock('postcss-url', () => (options) => ['postcss-url', options].filter((val) => val));
 jest.mock('postcss-mixins', () => (options) => ['postcss-mixins', options].filter((val) => val));
 jest.mock('postcss-css-variables', () => (options) => ['postcss-css-variables', options].filter((val) => val));
 jest.mock('postcss-for', () => () => 'postcss-for');
@@ -20,6 +21,14 @@ it('should pass options.importPath to postcss-import ', () => {
 
 it('should pass options.mixinsPath to postcss-mixins ', () => {
     expect(preset({ mixinsPath: 'foo' })).toMatchSnapshot();
+});
+
+it('should enable postcss-url if options.url is true', () => {
+    expect(preset({ url: true })).toMatchSnapshot();
+});
+
+it('should pass options.url to postcss-url', () => {
+    expect(preset({ url: { foo: 'bar' } })).toMatchSnapshot();
 });
 
 it('should pass options.browsers to postcss-cssnext ', () => {
