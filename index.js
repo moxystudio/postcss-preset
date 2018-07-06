@@ -30,6 +30,8 @@ module.exports = (options) => {
             }),
             // Add support for for loops
             require('postcss-for')(),
+            // Add support for @if and @else statements
+            require('postcss-conditionals')(),
             // Use CSS next, disabling some features
             require('postcss-cssnext')({
                 features: {

@@ -18,7 +18,12 @@ Object {
         "mixinsDir": undefined,
       },
     ],
-    "postcss-for",
+    Array [
+      "postcss-for",
+    ],
+    Array [
+      "postcss-conditionals",
+    ],
     Array [
       "postcss-cssnext",
       Object {
@@ -51,7 +56,12 @@ Object {
         "mixinsDir": undefined,
       },
     ],
-    "postcss-for",
+    Array [
+      "postcss-for",
+    ],
+    Array [
+      "postcss-conditionals",
+    ],
     Array [
       "postcss-cssnext",
       Object {
@@ -84,7 +94,12 @@ Object {
         "mixinsDir": undefined,
       },
     ],
-    "postcss-for",
+    Array [
+      "postcss-for",
+    ],
+    Array [
+      "postcss-conditionals",
+    ],
     Array [
       "postcss-cssnext",
       Object {
@@ -115,7 +130,12 @@ Object {
         "mixinsDir": undefined,
       },
     ],
-    "postcss-for",
+    Array [
+      "postcss-for",
+    ],
+    Array [
+      "postcss-conditionals",
+    ],
     Array [
       "postcss-cssnext",
       Object {
@@ -148,7 +168,12 @@ Object {
         "mixinsDir": "foo",
       },
     ],
-    "postcss-for",
+    Array [
+      "postcss-for",
+    ],
+    Array [
+      "postcss-conditionals",
+    ],
     Array [
       "postcss-cssnext",
       Object {
@@ -187,7 +212,12 @@ Object {
         "mixinsDir": undefined,
       },
     ],
-    "postcss-for",
+    Array [
+      "postcss-for",
+    ],
+    Array [
+      "postcss-conditionals",
+    ],
     Array [
       "postcss-cssnext",
       Object {
