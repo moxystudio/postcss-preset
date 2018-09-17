@@ -1,5 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should disable postcss-css-variables if options.cssVariables is false 1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "postcss-import",
+      Object {
+        "path": undefined,
+      },
+    ],
+    Array [
+      "postcss-mixins",
+      Object {
+        "mixinsDir": undefined,
+      },
+    ],
+    Array [
+      "postcss-for",
+    ],
+    Array [
+      "postcss-conditionals",
+    ],
+    Array [
+      "postcss-cssnext",
+      Object {
+        "features": Object {
+          "autoprefixer": Object {
+            "remove": false,
+          },
+          "browsers": Array [
+            "extends browserslist-config-google",
+          ],
+          "customProperties": false,
+          "rem": false,
+        },
+      },
+    ],
+  ],
+}
+`;
+
 exports[`should enable postcss-url if options.url is true 1`] = `
 Object {
   "plugins": Array [
@@ -34,6 +74,8 @@ Object {
           "browsers": Array [
             "extends browserslist-config-google",
           ],
+          "customProperties": undefined,
+          "rem": false,
         },
       },
     ],
@@ -72,6 +114,8 @@ Object {
           "browsers": Array [
             "extends browserslist-config-google",
           ],
+          "customProperties": undefined,
+          "rem": false,
         },
       },
     ],
@@ -108,6 +152,50 @@ Object {
             "remove": false,
           },
           "browsers": "foo",
+          "customProperties": undefined,
+          "rem": false,
+        },
+      },
+    ],
+  ],
+}
+`;
+
+exports[`should pass options.cssVariables to postcss-css-variables 1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "postcss-import",
+      Object {
+        "path": undefined,
+      },
+    ],
+    Array [
+      "postcss-mixins",
+      Object {
+        "mixinsDir": undefined,
+      },
+    ],
+    Array [
+      "postcss-for",
+    ],
+    Array [
+      "postcss-conditionals",
+    ],
+    Array [
+      "postcss-cssnext",
+      Object {
+        "features": Object {
+          "autoprefixer": Object {
+            "remove": false,
+          },
+          "browsers": Array [
+            "extends browserslist-config-google",
+          ],
+          "customProperties": Object {
+            "foo": "bar",
+          },
+          "rem": false,
         },
       },
     ],
@@ -146,6 +234,8 @@ Object {
           "browsers": Array [
             "extends browserslist-config-google",
           ],
+          "customProperties": undefined,
+          "rem": false,
         },
       },
     ],
@@ -184,6 +274,8 @@ Object {
           "browsers": Array [
             "extends browserslist-config-google",
           ],
+          "customProperties": undefined,
+          "rem": false,
         },
       },
     ],
@@ -228,6 +320,8 @@ Object {
           "browsers": Array [
             "extends browserslist-config-google",
           ],
+          "customProperties": undefined,
+          "rem": false,
         },
       },
     ],

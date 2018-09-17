@@ -12,6 +12,7 @@ module.exports = (options) => {
         mixinsPath: undefined,
         browsers: ['extends browserslist-config-google'],
         url: false,
+        cssVariables: true,
         ...options,
     };
 
@@ -35,7 +36,9 @@ module.exports = (options) => {
             // Use CSS next, disabling some features
             require('postcss-cssnext')({
                 features: {
+                    rem: false,
                     browsers: options.browsers,
+                    customProperties: options.cssVariables !== true ? options.cssVariables : undefined,
                     autoprefixer: {
                         remove: false, // No problem disabling, we use prefixes when really necessary
                     },

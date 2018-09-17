@@ -32,6 +32,14 @@ it('should pass options.url to postcss-url', () => {
     expect(preset({ url: { foo: 'bar' } })).toMatchSnapshot();
 });
 
+it('should disable postcss-css-variables if options.cssVariables is false', () => {
+    expect(preset({ cssVariables: false })).toMatchSnapshot();
+});
+
+it('should pass options.cssVariables to postcss-css-variables', () => {
+    expect(preset({ cssVariables: { foo: 'bar' } })).toMatchSnapshot();
+});
+
 it('should pass options.browsers to postcss-cssnext ', () => {
     expect(preset({ browsers: 'foo' })).toMatchSnapshot();
 });

@@ -62,7 +62,8 @@ Available options:
 | ------ | ------------- | -------- | ------- |
 | importPath | The path to pass to [postcss-import](https://github.com/postcss/postcss-import#path) | string/Array | undefined |
 | mixinsPath | The path to pass to [postcss-mixins](https://github.com/postcss/postcss-mixins#mixinsdir) | string/Array | undefined |
-| url | Options to pass to [postcss-url](https://github.com/postcss/postcss-mixins#mixinsdir) | boolean/Array/Object | false |
+| url | Options to pass to [postcss-url](https://github.com/postcss/postcss-mixins#mixinsdir), false disables any transpiling of `url()` declarations | boolean/Array/Object | false |
+| cssVariables | Options to pass to [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables), false disables any transpiling of `var()` declarations | boolean/Object | true |
 | browsers | Supported browsers list to pass to [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) | Array | [browserslist-config-google](https://github.com/awkaiser/browserslist-config-google) |
 
 The [postcss-url](https://github.com/postcss/postcss-url) plugin is disabled by default. You may activate it like so:
