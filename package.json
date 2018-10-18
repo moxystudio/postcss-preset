@@ -64,6 +64,7 @@
     "jest-serializer-path": "^0.1.15",
     "lint-staged": "^7.2.0",
     "lodash.compact": "^3.0.1",
+    "postcss": "^7.0.5",
     "standard-version": "^4.4.0"
   }
 }

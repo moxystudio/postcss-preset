@@ -1,11 +1,5 @@
 'use strict';
 
-const cssNextFeatures = require('postcss-cssnext/lib/features');
-
-// Replace 'postcss-custom-properties' with 'postcss-css-variables', which is more powerful
-// This is a ugly hack but must be done this way because of the postcss plugins ordering
-cssNextFeatures.default.customProperties = (options) => require('postcss-css-variables')(options);
-
 module.exports = (options) => {
     options = {
         importPath: undefined,
@@ -33,14 +27,22 @@ module.exports = (options) => {
             require('postcss-for')(),
             // Add support for @if and @else statements
             require('postcss-conditionals')(),
+            // Add support for nesting
+            require('postcss-nesting')(),
+            // Use `postcss-css-variables` instead of `postcss-custom-properties` because it's more complete
+            // Note that it must be set after the nesting!
+            options.cssVariables && require('postcss-css-variables')(options.cssVariables),
             // Use CSS next, disabling some features
             require('postcss-cssnext')({
                 features: {
                     rem: false,
+                    // Disable nesting and custom properties because we are enabling them above
+                    nesting: false,
+                    customProperties: false,
                     browsers: options.browsers,
-                    customProperties: options.cssVariables !== true ? options.cssVariables : undefined,
                     autoprefixer: {
-                        remove: false, // No problem disabling, we use prefixes when really necessary
+                        // No problem disabling, we use prefixes when really necessary
+                        remove: false,
                     },
                 },
             }),
