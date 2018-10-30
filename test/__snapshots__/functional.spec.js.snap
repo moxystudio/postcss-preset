@@ -6,201 +6,221 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
   border: 1px solid green;
     color: red;
     background: url('data:image/png;base64,');
-    background-image: url(\\"data:image/png;base64,\\");
-    padding: 40px
+    background-image: url(\\"data:image/png;base64,\\")
 }
 
 
-.image .loop-1 {
-    font-family: Verdana;
-  border: 1px solid green;
-    color: red;
-    background: url('data:image/png;base64,');
-    background-image: url(\\"data:image/png;base64,\\");
-    padding: 40px;
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+
+.image {
+    background-image:  url(\\"data:image/png;base64,\\")
+}
 }
 
 
 .image {
-    border-color: blue
+    background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+    background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+    padding: calc(20px * 2)
+}
+
+
+.image .loop-1 {
+            font-family: Verdana;
+  border: 1px solid green;
+            color: red;
+            background: url('data:image/png;base64,');
+            background-image: url(\\"data:image/png;base64,\\");
+        }
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .image .loop-1 {
+            background-image:  url(\\"data:image/png;base64,\\");
+        }
+}
+
+
+.image .loop-1 {
+            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            padding: calc(20px * 2);
+        }
+
+
+.image {
+        border-color: blue
 }
 
 
 .image .bar a {
-    font-family: Verdana;
+            font-family: Verdana;
   border: 1px solid green;
-    color: red;
-    background: url('data:image/png;base64,');
-    background-image: url(\\"data:image/png;base64,\\");
-    padding: 40px
-}
+            color: red;
+            background: url('data:image/png;base64,');
+            background-image: url(\\"data:image/png;base64,\\")
+        }
 
 
 .image .bar .link {
-    font-family: Verdana;
+            font-family: Verdana;
   border: 1px solid green;
-    color: red;
-    background: url('data:image/png;base64,');
-    background-image: url(\\"data:image/png;base64,\\");
-    padding: 40px
+            color: red;
+            background: url('data:image/png;base64,');
+            background-image: url(\\"data:image/png;base64,\\")
+        }
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .image .bar a,
+        .image .bar .link {
+            background-image:  url(\\"data:image/png;base64,\\")
+        }
+}
+
+
+.image .bar a {
+            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            padding: calc(20px * 2)
+        }
+
+
+.image .bar .link {
+            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            padding: calc(20px * 2)
+        }
+
+
+.image .bar a .loop-1 {
+                    font-family: Verdana;
+  border: 1px solid green;
+                    color: red;
+                    background: url('data:image/png;base64,');
+                    background-image: url(\\"data:image/png;base64,\\");
+                }
+
+
+.image .bar .link .loop-1 {
+                    font-family: Verdana;
+  border: 1px solid green;
+                    color: red;
+                    background: url('data:image/png;base64,');
+                    background-image: url(\\"data:image/png;base64,\\");
+                }
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                .image .bar a .loop-1, .image .bar .link .loop-1 {
+                    background-image:  url(\\"data:image/png;base64,\\");
+                }
 }
 
 
 .image .bar a .loop-1 {
-    font-family: Verdana;
-  border: 1px solid green;
-    color: red;
-    background: url('data:image/png;base64,');
-    background-image: url(\\"data:image/png;base64,\\");
-    padding: 40px;
-}
+                    background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                    background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                    padding: calc(20px * 2);
+                }
 
 
 .image .bar .link .loop-1 {
-    font-family: Verdana;
-  border: 1px solid green;
-    color: red;
-    background: url('data:image/png;base64,');
-    background-image: url(\\"data:image/png;base64,\\");
-    padding: 40px;
-}
+                    background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                    background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                    padding: calc(20px * 2);
+                }
 
 
 .image .bar a,
         .image .bar .link {
-    border-color: blue
+                border-color: blue
+        }
+
+
+.image .bar a:hover {
+                font-family: Verdana;
+  border: 1px solid green;
+                color: red;
+                background: url('data:image/png;base64,');
+                background-image: url(\\"data:image/png;base64,\\")
+            }
+
+
+.image .bar .link:hover {
+                font-family: Verdana;
+  border: 1px solid green;
+                color: red;
+                background: url('data:image/png;base64,');
+                background-image: url(\\"data:image/png;base64,\\")
+            }
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+
+            .image .bar a:hover, .image .bar .link:hover {
+                background-image:  url(\\"data:image/png;base64,\\")
+            }
 }
 
 
 .image .bar a:hover {
-    font-family: Verdana;
-  border: 1px solid green;
-    color: red;
-    background: url('data:image/png;base64,');
-    background-image: url(\\"data:image/png;base64,\\");
-    padding: 40px
-}
+                background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                padding: calc(20px * 2)
+            }
 
 
 .image .bar .link:hover {
-    font-family: Verdana;
+                background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                padding: calc(20px * 2)
+            }
+
+
+.image .bar a:hover .loop-1 {
+                        font-family: Verdana;
   border: 1px solid green;
-    color: red;
-    background: url('data:image/png;base64,');
-    background-image: url(\\"data:image/png;base64,\\");
-    padding: 40px
+                        color: red;
+                        background: url('data:image/png;base64,');
+                        background-image: url(\\"data:image/png;base64,\\");
+                    }
+
+
+.image .bar .link:hover .loop-1 {
+                        font-family: Verdana;
+  border: 1px solid green;
+                        color: red;
+                        background: url('data:image/png;base64,');
+                        background-image: url(\\"data:image/png;base64,\\");
+                    }
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                    .image .bar a:hover .loop-1, .image .bar .link:hover .loop-1 {
+                        background-image:  url(\\"data:image/png;base64,\\");
+                    }
 }
 
 
 .image .bar a:hover .loop-1 {
-    font-family: Verdana;
-  border: 1px solid green;
-    color: red;
-    background: url('data:image/png;base64,');
-    background-image: url(\\"data:image/png;base64,\\");
-    padding: 40px;
-}
+                        background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                        background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                        padding: calc(20px * 2);
+                    }
 
 
 .image .bar .link:hover .loop-1 {
-    font-family: Verdana;
-  border: 1px solid green;
-    color: red;
-    background: url('data:image/png;base64,');
-    background-image: url(\\"data:image/png;base64,\\");
-    padding: 40px;
-}
+                        background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                        background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                        padding: calc(20px * 2);
+                    }
 
 
 .image .bar a:hover, .image .bar .link:hover {
-    border-color: blue
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {.image {
-    background-image: url(\\"data:image/png;base64,\\")
-}
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-
-.image .loop-1 {
-        background-image: url(\\"data:image/png;base64,\\");
-    }
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-
-.image .bar a {
-        background-image: url(\\"data:image/png;base64,\\")
-    }
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-
-.image .bar .link {
-        background-image: url(\\"data:image/png;base64,\\")
-    }
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-
-.image .bar a .loop-1 {
-        background-image: url(\\"data:image/png;base64,\\");
-    }
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-
-.image .bar .link .loop-1 {
-        background-image: url(\\"data:image/png;base64,\\");
-    }
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-
-.image .bar a:hover {
-        background-image: url(\\"data:image/png;base64,\\")
-    }
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-
-.image .bar .link:hover {
-        background-image: url(\\"data:image/png;base64,\\")
-    }
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-
-.image .bar a:hover .loop-1 {
-        background-image: url(\\"data:image/png;base64,\\");
-    }
-}
-
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-
-.image .bar .link:hover .loop-1 {
-        background-image: url(\\"data:image/png;base64,\\");
-    }
-}
+                    border-color: blue
+            }
 "
 `;
