@@ -7,6 +7,7 @@ module.exports = (options) => {
         browsers: ['extends browserslist-config-google'],
         url: false,
         cssVariables: true,
+        calc: true,
         ...options,
     };
 
@@ -35,7 +36,7 @@ module.exports = (options) => {
                 insertAfter: {
                     'nesting-rules': [
                         // Make postcss reduce calc() operations
-                        require('postcss-calc')(),
+                        options.calc && require('postcss-calc')(options.calc !== true ? options.calc : undefined),
                         // Use `postcss-css-variables` instead of `postcss-custom-properties` because it's more complete
                         // Note that it must be set after the nesting!
                         options.cssVariables && require('postcss-css-variables')(options.cssVariables),
