@@ -16,7 +16,7 @@
 [greenkeeper-image]:https://badges.greenkeeper.io/moxystudio/postcss-preset-moxy.svg
 [greenkeeper-url]:https://greenkeeper.io
 
-[PostCSS](http://cssnext.io/) preset to be used at MOXY.
+[PostCSS](https://preset-env.cssdb.org/) preset to be used at MOXY.
 
 
 ## Installation
@@ -30,14 +30,17 @@ You might need to also install [postcss-cli](https://github.com/postcss/postcss-
 
 If you are developing a project that uses new CSS language features and must work on targets that do not yet support them, you have to transpile your styles. This preset provides a shareable PostCSS config as a preset that should be used across those projects at MOXY.
 
-- You can use any features from [cssnext](http://cssnext.io/)
+- You can use any features from [postcss-preset-env](https://preset-env.cssdb.org/) stage 3
+- Enables [postcss-preset-env](https://preset-env.cssdb.org/)'s [nesting rules](https://preset-env.cssdb.org/features#nesting-rules) so that nested statements are possible
+- Enables [postcss-preset-env](https://preset-env.cssdb.org/)'s [image-set function](https://preset-env.cssdb.org/features#image-set-function) so that a source set can be defined based on the user's resolution
 - Enables [postcss-import](https://github.com/postcss/postcss-import) so that `@import` statements are inlined
 - Optionally enables [postcss-url](https://github.com/postcss/postcss-url) so that `url()` statements are processed
 - Enables [postcss-mixins](https://github.com/postcss/postcss-mixins) so that you can define mixins
 - Enables [postcss-for](https://github.com/antyakushev/postcss-for) so that you can use `@for` loop
 - Enables [postcss-conditionals](https://github.com/andyjansson/postcss-conditionals) so that you can use `@if` and `@else` statements, useful inside mixins
 - Enables [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables) instead of [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) because it's [more complete](https://github.com/MadLittleMods/postcss-css-variables#differences-from-postcss-custom-properties).
-
+- Enables [postcss-apply](https://github.com/pascalduez/postcss-apply) so that @apply rules can be used
+- Enables [postcss-calc](https://github.com/postcss/postcss-calc) so that calc() oparations can be reduced  
 
 ## Usage
 

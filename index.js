@@ -12,12 +12,13 @@ module.exports = (options) => {
 
     return {
         plugins: [
-            require('postcss-apply'),
             // Let postcss parse @import statements
             require('postcss-import')({
                 // Any non-relative imports are resolved to this path
                 path: options.importPath,
             }),
+            // Add support for the @apply rule
+            require('postcss-apply')(),
             // Process url() statements
             options.url && require('postcss-url')(options.url !== true ? options.url : undefined),
             // Add support for CSS mixins
@@ -49,6 +50,8 @@ module.exports = (options) => {
                     },
                 },
             }),
+            // Make postcss reduce calc() operations
+            require('postcss-calc')(),
         ].filter(Boolean),
     };
 };

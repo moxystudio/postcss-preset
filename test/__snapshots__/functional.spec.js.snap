@@ -22,7 +22,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 .image {
     background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
     background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-    padding: calc(20px * 2)
+    padding: 40px
 }
 
 
@@ -45,7 +45,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 .image .loop-1 {
             background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
             background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            padding: calc(20px * 2);
+            padding: 40px;
         }
 
 
@@ -83,14 +83,14 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 .image .bar a {
             background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
             background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            padding: calc(20px * 2)
+            padding: 40px
         }
 
 
 .image .bar .link {
             background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
             background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            padding: calc(20px * 2)
+            padding: 40px
         }
 
 
@@ -122,14 +122,14 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 .image .bar a .loop-1 {
                     background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                     background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                    padding: calc(20px * 2);
+                    padding: 40px;
                 }
 
 
 .image .bar .link .loop-1 {
                     background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                     background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                    padding: calc(20px * 2);
+                    padding: 40px;
                 }
 
 
@@ -169,14 +169,14 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 .image .bar a:hover {
                 background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                 background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                padding: calc(20px * 2)
+                padding: 40px
             }
 
 
 .image .bar .link:hover {
                 background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                 background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                padding: calc(20px * 2)
+                padding: 40px
             }
 
 
@@ -208,14 +208,14 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 .image .bar a:hover .loop-1 {
                         background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                         background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                        padding: calc(20px * 2);
+                        padding: 40px;
                     }
 
 
 .image .bar .link:hover .loop-1 {
                         background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                         background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                        padding: calc(20px * 2);
+                        padding: 40px;
                     }
 
 

@@ -3,13 +3,13 @@
 exports[`should disable postcss-css-variables if options.cssVariables is false 1`] = `
 Object {
   "plugins": Array [
-    [Function],
     Array [
       "postcss-import",
       Object {
         "path": undefined,
       },
     ],
+    [Function],
     Array [
       "postcss-mixins",
       Object {
@@ -44,6 +44,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -51,13 +52,13 @@ Object {
 exports[`should enable postcss-url if options.url is true 1`] = `
 Object {
   "plugins": Array [
-    [Function],
     Array [
       "postcss-import",
       Object {
         "path": undefined,
       },
     ],
+    [Function],
     Array [
       "postcss-url",
     ],
@@ -98,6 +99,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -105,13 +107,13 @@ Object {
 exports[`should have a good base config 1`] = `
 Object {
   "plugins": Array [
-    [Function],
     Array [
       "postcss-import",
       Object {
         "path": undefined,
       },
     ],
+    [Function],
     Array [
       "postcss-mixins",
       Object {
@@ -149,6 +151,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -156,13 +159,13 @@ Object {
 exports[`should pass options.browsers to postcss-preset-env  1`] = `
 Object {
   "plugins": Array [
-    [Function],
     Array [
       "postcss-import",
       Object {
         "path": undefined,
       },
     ],
+    [Function],
     Array [
       "postcss-mixins",
       Object {
@@ -198,6 +201,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -205,13 +209,13 @@ Object {
 exports[`should pass options.cssVariables to postcss-css-variables 1`] = `
 Object {
   "plugins": Array [
-    [Function],
     Array [
       "postcss-import",
       Object {
         "path": undefined,
       },
     ],
+    [Function],
     Array [
       "postcss-mixins",
       Object {
@@ -251,6 +255,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -258,13 +263,13 @@ Object {
 exports[`should pass options.importPath to postcss-import  1`] = `
 Object {
   "plugins": Array [
-    [Function],
     Array [
       "postcss-import",
       Object {
         "path": "foo",
       },
     ],
+    [Function],
     Array [
       "postcss-mixins",
       Object {
@@ -302,6 +307,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -309,13 +315,13 @@ Object {
 exports[`should pass options.mixinsPath to postcss-mixins  1`] = `
 Object {
   "plugins": Array [
-    [Function],
     Array [
       "postcss-import",
       Object {
         "path": undefined,
       },
     ],
+    [Function],
     Array [
       "postcss-mixins",
       Object {
@@ -353,6 +359,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -360,13 +367,13 @@ Object {
 exports[`should pass options.url to postcss-url 1`] = `
 Object {
   "plugins": Array [
-    [Function],
     Array [
       "postcss-import",
       Object {
         "path": undefined,
       },
     ],
+    [Function],
     Array [
       "postcss-url",
       Object {
@@ -410,6 +417,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;

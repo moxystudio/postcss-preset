@@ -49,8 +49,10 @@
     ]
   },
   "dependencies": {
+    "ajv": "^6.5.4",
     "browserslist-config-google": "^1.5.0",
     "postcss-apply": "^0.11.0",
+    "postcss-calc": "^7.0.1",
     "postcss-conditionals": "^2.1.0",
     "postcss-css-variables": "^0.11.0",
     "postcss-for": "^2.1.1",
