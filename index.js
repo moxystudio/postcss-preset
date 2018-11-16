@@ -35,8 +35,6 @@ module.exports = (options) => {
                 stage: 3,
                 insertAfter: {
                     'nesting-rules': [
-                        // Make postcss reduce calc() operations
-                        options.calc && require('postcss-calc')(options.calc !== true ? options.calc : undefined),
                         // Use `postcss-css-variables` instead of `postcss-custom-properties` because it's more complete
                         // Note that it must be set after the nesting!
                         options.cssVariables && require('postcss-css-variables')(options.cssVariables),
@@ -53,6 +51,8 @@ module.exports = (options) => {
                     },
                 },
             }),
+            // Make postcss reduce calc() operations
+            options.calc && require('postcss-calc')(options.calc !== true ? options.calc : undefined),
         ].filter(Boolean),
     };
 };

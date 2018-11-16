@@ -38,13 +38,13 @@ Object {
         },
         "insertAfter": Object {
           "nesting-rules": Array [
-            [Function],
             false,
           ],
         },
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -90,7 +90,6 @@ Object {
         },
         "insertAfter": Object {
           "nesting-rules": Array [
-            [Function],
             Array [
               "postcss-css-variables",
               true,
@@ -100,6 +99,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -142,7 +142,6 @@ Object {
         },
         "insertAfter": Object {
           "nesting-rules": Array [
-            [Function],
             Array [
               "postcss-css-variables",
               true,
@@ -152,6 +151,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -192,7 +192,6 @@ Object {
         },
         "insertAfter": Object {
           "nesting-rules": Array [
-            [Function],
             Array [
               "postcss-css-variables",
               true,
@@ -202,6 +201,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -244,7 +244,6 @@ Object {
         },
         "insertAfter": Object {
           "nesting-rules": Array [
-            [Function],
             Array [
               "postcss-css-variables",
               Object {
@@ -256,6 +255,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -298,7 +298,6 @@ Object {
         },
         "insertAfter": Object {
           "nesting-rules": Array [
-            [Function],
             Array [
               "postcss-css-variables",
               true,
@@ -308,6 +307,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -350,7 +350,6 @@ Object {
         },
         "insertAfter": Object {
           "nesting-rules": Array [
-            [Function],
             Array [
               "postcss-css-variables",
               true,
@@ -360,6 +359,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
@@ -408,7 +408,6 @@ Object {
         },
         "insertAfter": Object {
           "nesting-rules": Array [
-            [Function],
             Array [
               "postcss-css-variables",
               true,
@@ -418,6 +417,7 @@ Object {
         "stage": 3,
       },
     ],
+    [Function],
   ],
 }
 `;
