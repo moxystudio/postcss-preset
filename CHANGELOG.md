@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/moxystudio/postcss-preset-moxy/compare/v2.3.1...v3.0.0) (2019-02-08)
+
+
+### Features
+
+* allow flexibility for configuring import and mixins plugin ([#26](https://github.com/moxystudio/postcss-preset-moxy/issues/26)) ([cc4fb19](https://github.com/moxystudio/postcss-preset-moxy/commit/cc4fb19))
+
+
+### BREAKING CHANGES
+
+* the options schema changed
+* the url options is now enabled by default
+
+
+
 <a name="2.3.1"></a>
 ## [2.3.1](https://github.com/moxystudio/postcss-preset-moxy/compare/v2.3.0...v2.3.1) (2018-10-18)
 
