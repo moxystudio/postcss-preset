@@ -17,12 +17,12 @@ it('should have a good base config', () => {
     expect(preset()).toMatchSnapshot();
 });
 
-it('should pass options.importPath to postcss-import ', () => {
-    expect(preset({ importPath: 'foo' })).toMatchSnapshot();
+it('should pass options.import to postcss-import ', () => {
+    expect(preset({ import: 'foo' })).toMatchSnapshot();
 });
 
-it('should pass options.mixinsPath to postcss-mixins ', () => {
-    expect(preset({ mixinsPath: 'foo' })).toMatchSnapshot();
+it('should pass options.mixins to postcss-mixins ', () => {
+    expect(preset({ mixins: 'foo' })).toMatchSnapshot();
 });
 
 it('should enable postcss-url if options.url is true', () => {

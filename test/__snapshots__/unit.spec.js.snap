@@ -5,15 +5,15 @@ Object {
   "plugins": Array [
     Array [
       "postcss-import",
+    ],
+    Array [
+      "postcss-url",
       Object {
-        "path": undefined,
+        "url": "rebase",
       },
     ],
     Array [
       "postcss-mixins",
-      Object {
-        "mixinsDir": undefined,
-      },
     ],
     Array [
       "postcss-for",
@@ -49,18 +49,12 @@ Object {
   "plugins": Array [
     Array [
       "postcss-import",
-      Object {
-        "path": undefined,
-      },
     ],
     Array [
       "postcss-url",
     ],
     Array [
       "postcss-mixins",
-      Object {
-        "mixinsDir": undefined,
-      },
     ],
     Array [
       "postcss-for",
@@ -100,15 +94,15 @@ Object {
   "plugins": Array [
     Array [
       "postcss-import",
+    ],
+    Array [
+      "postcss-url",
       Object {
-        "path": undefined,
+        "url": "rebase",
       },
     ],
     Array [
       "postcss-mixins",
-      Object {
-        "mixinsDir": undefined,
-      },
     ],
     Array [
       "postcss-for",
@@ -148,15 +142,15 @@ Object {
   "plugins": Array [
     Array [
       "postcss-import",
+    ],
+    Array [
+      "postcss-url",
       Object {
-        "path": undefined,
+        "url": "rebase",
       },
     ],
     Array [
       "postcss-mixins",
-      Object {
-        "mixinsDir": undefined,
-      },
     ],
     Array [
       "postcss-for",
@@ -194,15 +188,15 @@ Object {
   "plugins": Array [
     Array [
       "postcss-import",
+    ],
+    Array [
+      "postcss-url",
       Object {
-        "path": undefined,
+        "url": "rebase",
       },
     ],
     Array [
       "postcss-mixins",
-      Object {
-        "mixinsDir": undefined,
-      },
     ],
     Array [
       "postcss-for",
@@ -239,20 +233,21 @@ Object {
 }
 `;
 
-exports[`should pass options.importPath to postcss-import  1`] = `
+exports[`should pass options.import to postcss-import  1`] = `
 Object {
   "plugins": Array [
     Array [
       "postcss-import",
+      "foo",
+    ],
+    Array [
+      "postcss-url",
       Object {
-        "path": "foo",
+        "url": "rebase",
       },
     ],
     Array [
       "postcss-mixins",
-      Object {
-        "mixinsDir": undefined,
-      },
     ],
     Array [
       "postcss-for",
@@ -287,20 +282,21 @@ Object {
 }
 `;
 
-exports[`should pass options.mixinsPath to postcss-mixins  1`] = `
+exports[`should pass options.mixins to postcss-mixins  1`] = `
 Object {
   "plugins": Array [
     Array [
       "postcss-import",
+    ],
+    Array [
+      "postcss-url",
       Object {
-        "path": undefined,
+        "url": "rebase",
       },
     ],
     Array [
       "postcss-mixins",
-      Object {
-        "mixinsDir": "foo",
-      },
+      "foo",
     ],
     Array [
       "postcss-for",
@@ -340,9 +336,6 @@ Object {
   "plugins": Array [
     Array [
       "postcss-import",
-      Object {
-        "path": undefined,
-      },
     ],
     Array [
       "postcss-url",
@@ -352,9 +345,6 @@ Object {
     ],
     Array [
       "postcss-mixins",
-      Object {
-        "mixinsDir": undefined,
-      },
     ],
     Array [
       "postcss-for",

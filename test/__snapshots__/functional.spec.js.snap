@@ -3,7 +3,6 @@
 exports[`should generate correct output for fixtures/example.css 1`] = `
 ".image {
     font-family: Verdana;
-  border: 1px solid green;
     color: red;
     background: url('data:image/png;base64,');
     background-image: url(\\"data:image/png;base64,\\");
@@ -13,7 +12,6 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 .image .loop-1 {
     font-family: Verdana;
-  border: 1px solid green;
     color: red;
     background: url('data:image/png;base64,');
     background-image: url(\\"data:image/png;base64,\\");
@@ -28,7 +26,6 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 .image .bar a {
     font-family: Verdana;
-  border: 1px solid green;
     color: red;
     background: url('data:image/png;base64,');
     background-image: url(\\"data:image/png;base64,\\");
@@ -38,7 +35,6 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 .image .bar .link {
     font-family: Verdana;
-  border: 1px solid green;
     color: red;
     background: url('data:image/png;base64,');
     background-image: url(\\"data:image/png;base64,\\");
@@ -48,7 +44,6 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 .image .bar a .loop-1 {
     font-family: Verdana;
-  border: 1px solid green;
     color: red;
     background: url('data:image/png;base64,');
     background-image: url(\\"data:image/png;base64,\\");
@@ -58,7 +53,6 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 .image .bar .link .loop-1 {
     font-family: Verdana;
-  border: 1px solid green;
     color: red;
     background: url('data:image/png;base64,');
     background-image: url(\\"data:image/png;base64,\\");
@@ -74,7 +68,6 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 .image .bar a:hover {
     font-family: Verdana;
-  border: 1px solid green;
     color: red;
     background: url('data:image/png;base64,');
     background-image: url(\\"data:image/png;base64,\\");
@@ -84,7 +77,6 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 .image .bar .link:hover {
     font-family: Verdana;
-  border: 1px solid green;
     color: red;
     background: url('data:image/png;base64,');
     background-image: url(\\"data:image/png;base64,\\");
@@ -94,7 +86,6 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 .image .bar a:hover .loop-1 {
     font-family: Verdana;
-  border: 1px solid green;
     color: red;
     background: url('data:image/png;base64,');
     background-image: url(\\"data:image/png;base64,\\");
@@ -104,7 +95,6 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 .image .bar .link:hover .loop-1 {
     font-family: Verdana;
-  border: 1px solid green;
     color: red;
     background: url('data:image/png;base64,');
     background-image: url(\\"data:image/png;base64,\\");

@@ -1,8 +1,5 @@
 :root {
     --color-red: red;
-    --my-theme: {
-        border: 1px solid green;
-    }
     --padding: 20px;
 };
 
@@ -13,7 +10,6 @@
 
 .image {
     @mixin font-default;
-    @apply --my-theme;
     color: var(--color-red);
     background: url('image.png');
     background-image: image-set(url("image.png") 1x, url("image.png") 2x);
@@ -22,7 +18,6 @@
     @for $i from 1 to 1 {
         & .loop-$i {
             @mixin font-default;
-            @apply --my-theme;
             color: var(--color-red);
             background: url('image.png');
             background-image: image-set(url("image.png") 1x, url("image.png") 2x);
@@ -38,7 +33,6 @@
         & a,
         & .link {
             @mixin font-default;
-            @apply --my-theme;
             color: var(--color-red);
             background: url('image.png');
             background-image: image-set(url("image.png") 1x, url("image.png") 2x);
@@ -47,7 +41,6 @@
             @for $i from 1 to 1 {
                 & .loop-$i {
                     @mixin font-default;
-                    @apply --my-theme;
                     color: var(--color-red);
                     background: url('image.png');
                     background-image: image-set(url("image.png") 1x, url("image.png") 2x);
@@ -62,7 +55,6 @@
 
             &:hover {
                 @mixin font-default;
-                @apply --my-theme;
                 color: var(--color-red);
                 background: url('image.png');
                 background-image: image-set(url("image.png") 1x, url("image.png") 2x);
@@ -71,7 +63,6 @@
                 @for $i from 1 to 1 {
                     & .loop-$i {
                         @mixin font-default;
-                        @apply --my-theme;
                         color: var(--color-red);
                         background: url('image.png');
                         background-image: image-set(url("image.png") 1x, url("image.png") 2x);
