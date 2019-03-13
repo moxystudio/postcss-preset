@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/moxystudio/postcss-preset-moxy/compare/v3.0.0...v4.0.0) (2019-03-13)
+
+
+### Features
+
+* use postcss-preset-env instead of postcss-next ([#28](https://github.com/moxystudio/postcss-preset-moxy/issues/28)) ([a5429b3](https://github.com/moxystudio/postcss-preset-moxy/commit/a5429b3)), closes [#18](https://github.com/moxystudio/postcss-preset-moxy/issues/18)
+
+
+### BREAKING CHANGES
+
+* remove cssVariables option because postcss-preset-env will enable it based on the browsers
+* remove postcss-for plugin
+* we now postcss-preset-env with only stage 4 features, meaning most postcss-next plugins are no longer enabled
+
+Also update dependencies.
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/moxystudio/postcss-preset-moxy/compare/v2.3.1...v3.0.0) (2019-02-08)
 
