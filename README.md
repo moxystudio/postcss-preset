@@ -28,13 +28,13 @@ You might need to also install [postcss-cli](https://github.com/postcss/postcss-
 
 If you are developing a project that uses new CSS language features and must work on targets that do not yet support them, you have to transpile your styles. This preset provides a shareable PostCSS config as a preset that should be used across those projects at MOXY.
 
-- You can use any features from [cssnext](http://cssnext.io/)
+- Uses [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env) to automatically support official CSS features in older browsers
+- Uses [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables) instead of [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) because it's [more complete](https://github.com/MadLittleMods/postcss-css-variables#interoperability-and-differences-from-postcss-custom-properties)
 - Enables [postcss-import](https://github.com/postcss/postcss-import) so that `@import` statements are inlined
 - Optionally enables [postcss-url](https://github.com/postcss/postcss-url) so that `url()` statements are processed
 - Enables [postcss-mixins](https://github.com/postcss/postcss-mixins) so that you can define mixins
-- Enables [postcss-for](https://github.com/antyakushev/postcss-for) so that you can use `@for` loop
 - Enables [postcss-conditionals](https://github.com/andyjansson/postcss-conditionals) so that you can use `@if` and `@else` statements, useful inside mixins
-- Enables [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables) instead of [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) because it's [more complete](https://github.com/MadLittleMods/postcss-css-variables#differences-from-postcss-custom-properties).
+- Enables [postcss-color-function](https://github.com/postcss/postcss-color-function) so that you can use `alpha`, `lightness` and other color utilities
 
 
 ## Usage
@@ -59,9 +59,8 @@ Available options:
 | Name   | Description   | Type     | Default |
 | ------ | ------------- | -------- | ------- |
 | import | Options to pass to [postcss-import](https://github.com/postcss/postcss-import#path) | Object | undefined |
-| mixins | Optios to pass to [postcss-mixins](https://github.com/postcss/postcss-mixins#mixinsdir) | Object | undefined |
+| mixins | Options to pass to [postcss-mixins](https://github.com/postcss/postcss-mixins#mixinsdir) | Object | undefined |
 | url | Options to pass to [postcss-url](https://github.com/postcss/postcss-mixins#mixinsdir), false disables any transpilation of `url()` declarations | boolean/Array/Object | `{ url: 'rebase' }` |
-| cssVariables | Options to pass to [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables), false disables any transpilation of `var()` declarations | boolean/Object | true |
 | browsers | Supported browsers list to pass to [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) | Array | [browserslist-config-google](https://github.com/awkaiser/browserslist-config-google) |
 
 The [postcss-url](https://github.com/postcss/postcss-url) plugin is enabled by default. You may disable it like so:

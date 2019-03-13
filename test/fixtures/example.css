@@ -4,26 +4,26 @@
 };
 
 
+
+@media (min-width: 60px) {
+    :root {
+        --padding: 30px;
+    };
+}
+
+
 @define-mixin font-default {
     font-family: Verdana;
 }
 
 .image {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     @mixin font-default;
     color: var(--color-red);
     background: url('image.png');
     background-image: image-set(url("image.png") 1x, url("image.png") 2x);
     padding: calc(var(--padding) * 2);
-
-    @for $i from 1 to 1 {
-        & .loop-$i {
-            @mixin font-default;
-            color: var(--color-red);
-            background: url('image.png');
-            background-image: image-set(url("image.png") 1x, url("image.png") 2x);
-            padding: calc(var(--padding) * 2);
-        }
-    }
 
     @if 3 < 5 {
         border-color: blue;
@@ -38,16 +38,6 @@
             background-image: image-set(url("image.png") 1x, url("image.png") 2x);
             padding: calc(var(--padding) * 2);
 
-            @for $i from 1 to 1 {
-                & .loop-$i {
-                    @mixin font-default;
-                    color: var(--color-red);
-                    background: url('image.png');
-                    background-image: image-set(url("image.png") 1x, url("image.png") 2x);
-                    padding: calc(var(--padding) * 2);
-                }
-            }
-
             @if 3 < 5 {
                 border-color: blue;
             }
@@ -59,16 +49,6 @@
                 background: url('image.png');
                 background-image: image-set(url("image.png") 1x, url("image.png") 2x);
                 padding: calc(var(--padding) * 2);
-
-                @for $i from 1 to 1 {
-                    & .loop-$i {
-                        @mixin font-default;
-                        color: var(--color-red);
-                        background: url('image.png');
-                        background-image: image-set(url("image.png") 1x, url("image.png") 2x);
-                        padding: calc(var(--padding) * 2);
-                    }
-                }
 
                 @if 3 < 5 {
                     border-color: blue;

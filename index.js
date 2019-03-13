@@ -1,12 +1,16 @@
 'use strict';
 
+const poison = require('require-poisoning');
+
+// Ugly hack so that `postcss-preset-env` uses `postcss-css-variables` instead of `postcss-custom-properties`
+poison('postcss-custom-properties', require('postcss-css-variables'));
+
 module.exports = (options) => {
     options = {
         import: undefined,
         mixins: undefined,
         browsers: ['extends browserslist-config-google'],
         url: { url: 'rebase' },
-        cssVariables: true,
         ...options,
     };
 
@@ -18,29 +22,30 @@ module.exports = (options) => {
             options.url && require('postcss-url')(options.url !== true ? options.url : undefined),
             // Add support for CSS mixins
             require('postcss-mixins')(options.mixins),
-            // Add support for for loops
-            require('postcss-for')(),
             // Add support for @if and @else statements
             require('postcss-conditionals')(),
-            // Add support for nesting
-            require('postcss-nesting')(),
-            // Use `postcss-css-variables` instead of `postcss-custom-properties` because it's more complete
-            // Note that it must be set after the nesting!
-            options.cssVariables && require('postcss-css-variables')(options.cssVariables),
-            // Use CSS next, disabling some features
-            require('postcss-cssnext')({
+            // Use postcss-preset-env to enable plugins to transform official CSS features
+            // to be compatible in older browsers
+            require('postcss-preset-env')({
+                browsers: options.browsers,
+                stage: 4,
+                // Disable preserve so that the outputed CSS is consistent among all browsers,
+                // diminuishing the probability of discovering bugs only when testing in older browsers
+                preserve: false,
+                // Enable features that we want, dispite being proposals yet
                 features: {
-                    rem: false,
-                    // Disable nesting and custom properties because we are enabling them above
-                    nesting: false,
-                    customProperties: false,
-                    browsers: options.browsers,
-                    autoprefixer: {
-                        // No problem disabling, we use prefixes when really necessary
-                        remove: false,
-                    },
+                    'custom-properties': true,
+                    'custom-media-queries': true,
+                    'nesting-rules': true,
+                },
+                autoprefixer: {
+                    // We don't use prefixes unless they are really necessary, e.g.: when dealing with quirks
+                    // Therefore, we disable removing them
+                    remove: false,
                 },
             }),
+            // Add support for `alpha()` and other color utilities
+            require('postcss-color-function')(),
         ].filter(Boolean),
     };
 };
