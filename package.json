@@ -50,25 +50,26 @@
   },
   "dependencies": {
     "browserslist-config-google": "^1.5.0",
+    "postcss-color-function": "^4.0.1",
     "postcss-conditionals": "^2.1.0",
-    "postcss-css-variables": "^0.11.0",
-    "postcss-cssnext": "^3.1.0",
-    "postcss-for": "^2.1.1",
+    "postcss-css-variables": "^0.12.0",
     "postcss-import": "^12.0.0",
     "postcss-mixins": "^6.2.0",
-    "postcss-url": "^8.0.0"
+    "postcss-preset-env": "^6.6.0",
+    "postcss-url": "^8.0.0",
+    "require-poisoning": "^2.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
     "eslint": "^5.3.0",
-    "eslint-config-moxy": "^6.0.1",
+    "eslint-config-moxy": "^7.0.0",
     "husky": "^1.0.0",
     "jest": "^24.5.0",
     "jest-serializer-path": "^0.1.15",
     "lint-staged": "^8.1.3",
     "lodash.compact": "^3.0.1",
     "postcss": "^7.0.5",
-    "standard-version": "^4.4.0"
+    "standard-version": "^5.0.0"
   }
 }

@@ -1,49 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should disable postcss-css-variables if options.cssVariables is false 1`] = `
-Object {
-  "plugins": Array [
-    Array [
-      "postcss-import",
-    ],
-    Array [
-      "postcss-url",
-      Object {
-        "url": "rebase",
-      },
-    ],
-    Array [
-      "postcss-mixins",
-    ],
-    Array [
-      "postcss-for",
-    ],
-    Array [
-      "postcss-conditionals",
-    ],
-    Array [
-      "postcss-nesting",
-    ],
-    Array [
-      "postcss-cssnext",
-      Object {
-        "features": Object {
-          "autoprefixer": Object {
-            "remove": false,
-          },
-          "browsers": Array [
-            "extends browserslist-config-google",
-          ],
-          "customProperties": false,
-          "nesting": false,
-          "rem": false,
-        },
-      },
-    ],
-  ],
-}
-`;
-
 exports[`should enable postcss-url if options.url is true 1`] = `
 Object {
   "plugins": Array [
@@ -57,33 +13,28 @@ Object {
       "postcss-mixins",
     ],
     Array [
-      "postcss-for",
-    ],
-    Array [
       "postcss-conditionals",
     ],
     Array [
-      "postcss-nesting",
-    ],
-    Array [
-      "postcss-css-variables",
-      true,
-    ],
-    Array [
-      "postcss-cssnext",
+      "postcss-preset-env",
       Object {
-        "features": Object {
-          "autoprefixer": Object {
-            "remove": false,
-          },
-          "browsers": Array [
-            "extends browserslist-config-google",
-          ],
-          "customProperties": false,
-          "nesting": false,
-          "rem": false,
+        "autoprefixer": Object {
+          "remove": false,
         },
+        "browsers": Array [
+          "extends browserslist-config-google",
+        ],
+        "features": Object {
+          "custom-media-queries": true,
+          "custom-properties": true,
+          "nesting-rules": true,
+        },
+        "preserve": false,
+        "stage": 4,
       },
+    ],
+    Array [
+      "postcss-color-function",
     ],
   ],
 }
@@ -105,33 +56,28 @@ Object {
       "postcss-mixins",
     ],
     Array [
-      "postcss-for",
-    ],
-    Array [
       "postcss-conditionals",
     ],
     Array [
-      "postcss-nesting",
-    ],
-    Array [
-      "postcss-css-variables",
-      true,
-    ],
-    Array [
-      "postcss-cssnext",
+      "postcss-preset-env",
       Object {
-        "features": Object {
-          "autoprefixer": Object {
-            "remove": false,
-          },
-          "browsers": Array [
-            "extends browserslist-config-google",
-          ],
-          "customProperties": false,
-          "nesting": false,
-          "rem": false,
+        "autoprefixer": Object {
+          "remove": false,
         },
+        "browsers": Array [
+          "extends browserslist-config-google",
+        ],
+        "features": Object {
+          "custom-media-queries": true,
+          "custom-properties": true,
+          "nesting-rules": true,
+        },
+        "preserve": false,
+        "stage": 4,
       },
+    ],
+    Array [
+      "postcss-color-function",
     ],
   ],
 }
@@ -153,81 +99,26 @@ Object {
       "postcss-mixins",
     ],
     Array [
-      "postcss-for",
-    ],
-    Array [
       "postcss-conditionals",
     ],
     Array [
-      "postcss-nesting",
-    ],
-    Array [
-      "postcss-css-variables",
-      true,
-    ],
-    Array [
-      "postcss-cssnext",
+      "postcss-preset-env",
       Object {
-        "features": Object {
-          "autoprefixer": Object {
-            "remove": false,
-          },
-          "browsers": "foo",
-          "customProperties": false,
-          "nesting": false,
-          "rem": false,
+        "autoprefixer": Object {
+          "remove": false,
         },
-      },
-    ],
-  ],
-}
-`;
-
-exports[`should pass options.cssVariables to postcss-css-variables 1`] = `
-Object {
-  "plugins": Array [
-    Array [
-      "postcss-import",
-    ],
-    Array [
-      "postcss-url",
-      Object {
-        "url": "rebase",
-      },
-    ],
-    Array [
-      "postcss-mixins",
-    ],
-    Array [
-      "postcss-for",
-    ],
-    Array [
-      "postcss-conditionals",
-    ],
-    Array [
-      "postcss-nesting",
-    ],
-    Array [
-      "postcss-css-variables",
-      Object {
-        "foo": "bar",
-      },
-    ],
-    Array [
-      "postcss-cssnext",
-      Object {
+        "browsers": "foo",
         "features": Object {
-          "autoprefixer": Object {
-            "remove": false,
-          },
-          "browsers": Array [
-            "extends browserslist-config-google",
-          ],
-          "customProperties": false,
-          "nesting": false,
-          "rem": false,
+          "custom-media-queries": true,
+          "custom-properties": true,
+          "nesting-rules": true,
         },
+        "preserve": false,
+        "stage": 4,
       },
+    ],
+    Array [
+      "postcss-color-function",
     ],
   ],
 }
@@ -250,33 +141,28 @@ Object {
       "postcss-mixins",
     ],
     Array [
-      "postcss-for",
-    ],
-    Array [
       "postcss-conditionals",
     ],
     Array [
-      "postcss-nesting",
-    ],
-    Array [
-      "postcss-css-variables",
-      true,
-    ],
-    Array [
-      "postcss-cssnext",
+      "postcss-preset-env",
       Object {
-        "features": Object {
-          "autoprefixer": Object {
-            "remove": false,
-          },
-          "browsers": Array [
-            "extends browserslist-config-google",
-          ],
-          "customProperties": false,
-          "nesting": false,
-          "rem": false,
+        "autoprefixer": Object {
+          "remove": false,
         },
+        "browsers": Array [
+          "extends browserslist-config-google",
+        ],
+        "features": Object {
+          "custom-media-queries": true,
+          "custom-properties": true,
+          "nesting-rules": true,
+        },
+        "preserve": false,
+        "stage": 4,
       },
+    ],
+    Array [
+      "postcss-color-function",
     ],
   ],
 }
@@ -299,33 +185,28 @@ Object {
       "foo",
     ],
     Array [
-      "postcss-for",
-    ],
-    Array [
       "postcss-conditionals",
     ],
     Array [
-      "postcss-nesting",
-    ],
-    Array [
-      "postcss-css-variables",
-      true,
-    ],
-    Array [
-      "postcss-cssnext",
+      "postcss-preset-env",
       Object {
-        "features": Object {
-          "autoprefixer": Object {
-            "remove": false,
-          },
-          "browsers": Array [
-            "extends browserslist-config-google",
-          ],
-          "customProperties": false,
-          "nesting": false,
-          "rem": false,
+        "autoprefixer": Object {
+          "remove": false,
         },
+        "browsers": Array [
+          "extends browserslist-config-google",
+        ],
+        "features": Object {
+          "custom-media-queries": true,
+          "custom-properties": true,
+          "nesting-rules": true,
+        },
+        "preserve": false,
+        "stage": 4,
       },
+    ],
+    Array [
+      "postcss-color-function",
     ],
   ],
 }
@@ -347,33 +228,28 @@ Object {
       "postcss-mixins",
     ],
     Array [
-      "postcss-for",
-    ],
-    Array [
       "postcss-conditionals",
     ],
     Array [
-      "postcss-nesting",
-    ],
-    Array [
-      "postcss-css-variables",
-      true,
-    ],
-    Array [
-      "postcss-cssnext",
+      "postcss-preset-env",
       Object {
-        "features": Object {
-          "autoprefixer": Object {
-            "remove": false,
-          },
-          "browsers": Array [
-            "extends browserslist-config-google",
-          ],
-          "customProperties": false,
-          "nesting": false,
-          "rem": false,
+        "autoprefixer": Object {
+          "remove": false,
         },
+        "browsers": Array [
+          "extends browserslist-config-google",
+        ],
+        "features": Object {
+          "custom-media-queries": true,
+          "custom-properties": true,
+          "nesting-rules": true,
+        },
+        "preserve": false,
+        "stage": 4,
       },
+    ],
+    Array [
+      "postcss-color-function",
     ],
   ],
 }
