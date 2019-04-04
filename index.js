@@ -1,10 +1,5 @@
 'use strict';
 
-const poison = require('require-poisoning');
-
-// Ugly hack so that `postcss-preset-env` uses `postcss-css-variables` instead of `postcss-custom-properties`
-poison('postcss-custom-properties', require('postcss-css-variables'));
-
 module.exports = (options) => {
     options = {
         import: undefined,
@@ -34,9 +29,13 @@ module.exports = (options) => {
                 preserve: false,
                 // Enable features that we want, dispite being proposals yet
                 features: {
-                    'custom-properties': true,
+                    'custom-properties': false,
+                    'environment-variables': false,
                     'custom-media-queries': true,
                     'nesting-rules': true,
+                },
+                insertAfter: {
+                    'nesting-rules': require('postcss-css-variables'),
                 },
                 autoprefixer: {
                     // We don't use prefixes unless they are really necessary, e.g.: when dealing with quirks

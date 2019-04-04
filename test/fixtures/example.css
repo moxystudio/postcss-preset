@@ -1,6 +1,8 @@
 :root {
     --color-red: red;
     --padding: 20px;
+    --image-url: url('image.png');
+    --color-white: #000;
 };
 
 
@@ -34,7 +36,7 @@
         & .link {
             @mixin font-default;
             color: var(--color-red);
-            background: url('image.png');
+            background: var(--image-url);
             background-image: image-set(url("image.png") 1x, url("image.png") 2x);
             padding: calc(var(--padding) * 2);
 
@@ -52,6 +54,18 @@
 
                 @if 3 < 5 {
                     border-color: blue;
+                }
+            }
+        }
+    }
+}
+
+.buttonWrapper {
+    & .button {
+        &.tertiary {
+            &:enabled:hover:not(.loading) {
+                & span {
+                    color: color(var(--color-white) alpha(0.8));
                 }
             }
         }
