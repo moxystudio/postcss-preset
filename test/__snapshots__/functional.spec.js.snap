@@ -6,81 +6,11 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
     transition: all 0.2s ease;
     font-family: Verdana;
     color: red;
-    background: url('data:image/png;base64,');
+    background: url(\\"data:image/png;base64,\\");
     background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
     background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
     padding: calc(20px * 2);
         border-color: blue
-}
-
-
-
-.image .bar a {
-            font-family: Verdana;
-            color: red;
-            background: url('data:image/png;base64,');
-            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            padding: calc(20px * 2);
-                border-color: blue
-        }
-
-
-
-.image .bar a:hover {
-                font-family: Verdana;
-                color: var(--color-red);
-                background: url('data:image/png;base64,');
-                background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                padding: calc(var(--padding) * 2);
-                    border-color: blue
-            }
-
-
-
-@media (min-width: 60px) {
-
-
-
-.image .bar a {
-            padding: calc(30px * 2)
-    }
-}
-
-
-
-.image .bar .link {
-            font-family: Verdana;
-            color: red;
-            background: url('data:image/png;base64,');
-            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            padding: calc(20px * 2);
-                border-color: blue
-        }
-
-
-
-.image .bar .link:hover {
-                font-family: Verdana;
-                color: var(--color-red);
-                background: url('data:image/png;base64,');
-                background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                padding: calc(var(--padding) * 2);
-                    border-color: blue
-            }
-
-
-
-@media (min-width: 60px) {
-
-
-
-.image .bar .link {
-            padding: calc(30px * 2)
-    }
 }
 
 
@@ -93,5 +23,103 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
     padding: calc(30px * 2)
     }
 }
+
+
+
+.image .bar a {
+            font-family: Verdana;
+            color: red;
+            background: url(\\"data:image/png;base64,\\");
+            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            padding: calc(20px * 2);
+                border-color: blue
+        }
+
+
+
+@media (min-width: 60px) {
+
+
+
+    .image .bar a {
+            padding: calc(30px * 2)
+    }
+}
+
+
+
+.image .bar .link {
+            font-family: Verdana;
+            color: red;
+            background: url(\\"data:image/png;base64,\\");
+            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            padding: calc(20px * 2);
+                border-color: blue
+        }
+
+
+
+@media (min-width: 60px) {
+
+
+
+    .image .bar .link {
+            padding: calc(30px * 2)
+    }
+}
+
+
+
+.image .bar a:hover {
+                font-family: Verdana;
+                color: red;
+                background: url(\\"data:image/png;base64,\\");
+                background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                padding: calc(20px * 2);
+                    border-color: blue
+            }
+
+
+
+@media (min-width: 60px) {
+
+
+
+    .image .bar a:hover {
+                padding: calc(30px * 2)
+    }
+}
+
+
+
+.image .bar .link:hover {
+                font-family: Verdana;
+                color: red;
+                background: url(\\"data:image/png;base64,\\");
+                background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+                padding: calc(20px * 2);
+                    border-color: blue
+            }
+
+
+
+@media (min-width: 60px) {
+
+
+
+    .image .bar .link:hover {
+                padding: calc(30px * 2)
+    }
+}
+
+
+
+.buttonWrapper .button.tertiary:enabled:hover:not(.loading) span {
+                    color: rgba(0, 0, 0, 0.8);
+                }
 "
 `;

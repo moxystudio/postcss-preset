@@ -56,8 +56,7 @@
     "postcss-import": "^12.0.0",
     "postcss-mixins": "^6.2.0",
     "postcss-preset-env": "^6.6.0",
-    "postcss-url": "^8.0.0",
-    "require-poisoning": "^2.0.0"
+    "postcss-url": "^8.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
