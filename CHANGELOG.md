@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/moxystudio/postcss-preset-moxy/compare/v4.0.0...v4.0.1) (2019-04-04)
+
+
+### Bug Fixes
+
+* fix issues related to custom properties in more complex nestings ([#29](https://github.com/moxystudio/postcss-preset-moxy/issues/29)) ([1dfa796](https://github.com/moxystudio/postcss-preset-moxy/commit/1dfa796))
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/moxystudio/postcss-preset-moxy/compare/v3.0.0...v4.0.0) (2019-03-13)
 
