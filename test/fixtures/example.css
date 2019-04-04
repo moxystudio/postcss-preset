@@ -37,7 +37,7 @@
             @mixin font-default;
             color: var(--color-red);
             background: var(--image-url);
-            background-image: image-set(url("image.png") 1x, url("image.png") 2x);
+            background-image: image-set(url("image.png") 1x, var(--image-url) 2x);
             padding: calc(var(--padding) * 2);
 
             @if 3 < 5 {

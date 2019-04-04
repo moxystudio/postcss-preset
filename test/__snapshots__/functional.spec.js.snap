@@ -30,8 +30,8 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
             font-family: Verdana;
             color: red;
             background: url('data:image/png;base64,');
-            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url('data:image/png;base64,') 2x);
+            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url('data:image/png;base64,') 2x);
             padding: calc(20px * 2);
                 border-color: blue
         }
@@ -53,8 +53,8 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
             font-family: Verdana;
             color: red;
             background: url('data:image/png;base64,');
-            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url('data:image/png;base64,') 2x);
+            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url('data:image/png;base64,') 2x);
             padding: calc(20px * 2);
                 border-color: blue
         }
