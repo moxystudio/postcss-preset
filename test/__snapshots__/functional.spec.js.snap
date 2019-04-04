@@ -6,7 +6,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
     transition: all 0.2s ease;
     font-family: Verdana;
     color: red;
-    background: url('data:image/png;base64,');
+    background: url(\\"data:image/png;base64,\\");
     background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
     background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
     padding: calc(20px * 2);
@@ -29,9 +29,9 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 .image .bar a {
             font-family: Verdana;
             color: red;
-            background: url('data:image/png;base64,');
-            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url('data:image/png;base64,') 2x);
-            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url('data:image/png;base64,') 2x);
+            background: url(\\"data:image/png;base64,\\");
+            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
             padding: calc(20px * 2);
                 border-color: blue
         }
@@ -52,9 +52,9 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 .image .bar .link {
             font-family: Verdana;
             color: red;
-            background: url('data:image/png;base64,');
-            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url('data:image/png;base64,') 2x);
-            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url('data:image/png;base64,') 2x);
+            background: url(\\"data:image/png;base64,\\");
+            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
+            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
             padding: calc(20px * 2);
                 border-color: blue
         }
@@ -75,7 +75,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 .image .bar a:hover {
                 font-family: Verdana;
                 color: red;
-                background: url('data:image/png;base64,');
+                background: url(\\"data:image/png;base64,\\");
                 background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                 background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                 padding: calc(20px * 2);
@@ -98,7 +98,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 .image .bar .link:hover {
                 font-family: Verdana;
                 color: red;
-                background: url('data:image/png;base64,');
+                background: url(\\"data:image/png;base64,\\");
                 background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                 background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                 padding: calc(20px * 2);

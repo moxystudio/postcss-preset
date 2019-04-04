@@ -1,7 +1,7 @@
 :root {
     --color-red: red;
     --padding: 20px;
-    --image-url: url('image.png');
+    --image-url: url("image.png");
     --color-white: #000;
 };
 
@@ -23,7 +23,7 @@
     transition: all 0.2s ease;
     @mixin font-default;
     color: var(--color-red);
-    background: url('image.png');
+    background: url("image.png");
     background-image: image-set(url("image.png") 1x, url("image.png") 2x);
     padding: calc(var(--padding) * 2);
 
@@ -48,7 +48,7 @@
             &:hover {
                 @mixin font-default;
                 color: var(--color-red);
-                background: url('image.png');
+                background: url("image.png");
                 background-image: image-set(url("image.png") 1x, url("image.png") 2x);
                 padding: calc(var(--padding) * 2);
 
