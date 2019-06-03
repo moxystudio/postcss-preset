@@ -27,14 +27,13 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
-          "environment-variables": false,
           "nesting-rules": true,
         },
         "insertAfter": Object {
           "nesting-rules": [Function],
         },
         "preserve": false,
-        "stage": 4,
+        "stage": 3,
       },
     ],
     Array [
@@ -74,14 +73,13 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
-          "environment-variables": false,
           "nesting-rules": true,
         },
         "insertAfter": Object {
           "nesting-rules": [Function],
         },
         "preserve": false,
-        "stage": 4,
+        "stage": 3,
       },
     ],
     Array [
@@ -119,14 +117,13 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
-          "environment-variables": false,
           "nesting-rules": true,
         },
         "insertAfter": Object {
           "nesting-rules": [Function],
         },
         "preserve": false,
-        "stage": 4,
+        "stage": 3,
       },
     ],
     Array [
@@ -167,14 +164,13 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
-          "environment-variables": false,
           "nesting-rules": true,
         },
         "insertAfter": Object {
           "nesting-rules": [Function],
         },
         "preserve": false,
-        "stage": 4,
+        "stage": 3,
       },
     ],
     Array [
@@ -215,14 +211,13 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
-          "environment-variables": false,
           "nesting-rules": true,
         },
         "insertAfter": Object {
           "nesting-rules": [Function],
         },
         "preserve": false,
-        "stage": 4,
+        "stage": 3,
       },
     ],
     Array [
@@ -262,14 +257,13 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
-          "environment-variables": false,
           "nesting-rules": true,
         },
         "insertAfter": Object {
           "nesting-rules": [Function],
         },
         "preserve": false,
-        "stage": 4,
+        "stage": 3,
       },
     ],
     Array [

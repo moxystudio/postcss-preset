@@ -23,14 +23,13 @@ module.exports = (options) => {
             // to be compatible in older browsers
             require('postcss-preset-env')({
                 browsers: options.browsers,
-                stage: 4,
+                stage: 3,
                 // Disable preserve so that the outputed CSS is consistent among all browsers,
                 // diminuishing the probability of discovering bugs only when testing in older browsers
                 preserve: false,
                 // Enable features that we want, dispite being proposals yet
                 features: {
                     'custom-properties': false,
-                    'environment-variables': false,
                     'custom-media-queries': true,
                     'nesting-rules': true,
                 },
