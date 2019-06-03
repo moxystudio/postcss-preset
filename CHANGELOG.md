@@ -1,6 +1,15 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [4.1.0](https://github.com/moxystudio/postcss-preset-moxy/compare/v4.0.1...v4.1.0) (2019-06-03)
+
+
+### Features
+
+* update stage of postcss-preset-env ([#30](https://github.com/moxystudio/postcss-preset-moxy/issues/30)) ([c2d9a96](https://github.com/moxystudio/postcss-preset-moxy/commit/c2d9a96))
+
+
 
 <a name="4.0.1"></a>
 ## [4.0.1](https://github.com/moxystudio/postcss-preset-moxy/compare/v4.0.0...v4.0.1) (2019-04-04)
