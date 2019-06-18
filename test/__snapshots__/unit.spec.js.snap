@@ -19,6 +19,9 @@ Object {
       "postcss-preset-env",
       Object {
         "autoprefixer": Object {
+          "overrideBrowserslist": Array [
+            "extends browserslist-config-google",
+          ],
           "remove": false,
         },
         "browsers": Array [
@@ -65,6 +68,9 @@ Object {
       "postcss-preset-env",
       Object {
         "autoprefixer": Object {
+          "overrideBrowserslist": Array [
+            "extends browserslist-config-google",
+          ],
           "remove": false,
         },
         "browsers": Array [
@@ -111,6 +117,7 @@ Object {
       "postcss-preset-env",
       Object {
         "autoprefixer": Object {
+          "overrideBrowserslist": "foo",
           "remove": false,
         },
         "browsers": "foo",
@@ -156,6 +163,9 @@ Object {
       "postcss-preset-env",
       Object {
         "autoprefixer": Object {
+          "overrideBrowserslist": Array [
+            "extends browserslist-config-google",
+          ],
           "remove": false,
         },
         "browsers": Array [
@@ -203,6 +213,9 @@ Object {
       "postcss-preset-env",
       Object {
         "autoprefixer": Object {
+          "overrideBrowserslist": Array [
+            "extends browserslist-config-google",
+          ],
           "remove": false,
         },
         "browsers": Array [
@@ -249,6 +262,9 @@ Object {
       "postcss-preset-env",
       Object {
         "autoprefixer": Object {
+          "overrideBrowserslist": Array [
+            "extends browserslist-config-google",
+          ],
           "remove": false,
         },
         "browsers": Array [

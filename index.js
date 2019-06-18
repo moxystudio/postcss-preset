@@ -40,6 +40,8 @@ module.exports = (options) => {
                     // We don't use prefixes unless they are really necessary, e.g.: when dealing with quirks
                     // Therefore, we disable removing them
                     remove: false,
+                    // See: https://github.com/csstools/postcss-preset-env/issues/133
+                    overrideBrowserslist: options.browsers,
                 },
             }),
             // Add support for `alpha()` and other color utilities
