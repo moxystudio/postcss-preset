@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.1.1](https://github.com/moxystudio/postcss-preset-moxy/compare/v4.1.0...v4.1.1) (2019-06-18)
+
+
+### Bug Fixes
+
+* fix autoprefixer warning because we were using a deprecated option ([cacb3a7](https://github.com/moxystudio/postcss-preset-moxy/commit/cacb3a7))
+
+
+
 ## [4.1.0](https://github.com/moxystudio/postcss-preset-moxy/compare/v4.0.1...v4.1.0) (2019-06-03)
 
 
