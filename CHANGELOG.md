@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.1.2](https://github.com/moxystudio/postcss-preset-moxy/compare/v4.1.1...v4.1.2) (2019-06-23)
+
+
+### Bug Fixes
+
+* fix media queries and variables combo being out of order ([b77efb8](https://github.com/moxystudio/postcss-preset-moxy/commit/b77efb8))
+
+
+
 ### [4.1.1](https://github.com/moxystudio/postcss-preset-moxy/compare/v4.1.0...v4.1.1) (2019-06-18)
 
 
