@@ -34,7 +34,7 @@ module.exports = (options) => {
                     'nesting-rules': true,
                 },
                 insertAfter: {
-                    'nesting-rules': require('postcss-css-variables'),
+                    'nesting-rules': require('postcss-css-variables')({ preserveAtRulesOrder: true }),
                 },
                 autoprefixer: {
                     // We don't use prefixes unless they are really necessary, e.g.: when dealing with quirks
