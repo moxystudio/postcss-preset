@@ -60,7 +60,7 @@ Available options:
 | ------ | ------------- | -------- | ------- |
 | import | Options to pass to [postcss-import](https://github.com/postcss/postcss-import#path) | Object | undefined |
 | mixins | Options to pass to [postcss-mixins](https://github.com/postcss/postcss-mixins#mixinsdir) | Object | undefined |
-| url | Options to pass to [postcss-url](https://github.com/postcss/postcss-mixins#mixinsdir), false disables any transpilation of `url()` declarations | boolean/Array/Object | `{ url: 'rebase' }` |
+| url | Options to pass to [postcss-url](https://github.com/postcss/postcss-url), false disables any transpilation of `url()` declarations | boolean/Array/Object | `{ url: 'rebase' }` |
 | browsers | Supported browsers list to pass to [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) | Array | [browserslist-config-google](https://github.com/awkaiser/browserslist-config-google) |
 
 The [postcss-url](https://github.com/postcss/postcss-url) plugin is enabled by default. You may disable it like so:
