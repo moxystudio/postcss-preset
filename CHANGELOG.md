@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.0](https://github.com/moxystudio/postcss-preset-moxy/compare/v4.1.2...v4.2.0) (2019-09-13)
+
+
+### Features
+
+* allow to customize cssVariables options ([17da1e8](https://github.com/moxystudio/postcss-preset-moxy/commit/17da1e8))
+
+
+
 ### [4.1.2](https://github.com/moxystudio/postcss-preset-moxy/compare/v4.1.1...v4.1.2) (2019-06-23)
 
 
