@@ -5,6 +5,7 @@ module.exports = (options) => {
         import: undefined,
         mixins: undefined,
         browsers: ['extends browserslist-config-google'],
+        cssVariables: { preserveAtRulesOrder: true },
         url: { url: 'rebase' },
         ...options,
     };
@@ -34,7 +35,7 @@ module.exports = (options) => {
                     'nesting-rules': true,
                 },
                 insertAfter: {
-                    'nesting-rules': require('postcss-css-variables')({ preserveAtRulesOrder: true }),
+                    'nesting-rules': require('postcss-css-variables')(options.cssVariables),
                 },
                 autoprefixer: {
                     // We don't use prefixes unless they are really necessary, e.g.: when dealing with quirks

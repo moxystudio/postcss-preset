@@ -95,6 +95,55 @@ Object {
 }
 `;
 
+exports[`should pass options.browsers to postcss-css-variables  1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "postcss-import",
+    ],
+    Array [
+      "postcss-url",
+      Object {
+        "url": "rebase",
+      },
+    ],
+    Array [
+      "postcss-mixins",
+    ],
+    Array [
+      "postcss-conditionals",
+    ],
+    Array [
+      "postcss-preset-env",
+      Object {
+        "autoprefixer": Object {
+          "overrideBrowserslist": Array [
+            "extends browserslist-config-google",
+          ],
+          "remove": false,
+        },
+        "browsers": Array [
+          "extends browserslist-config-google",
+        ],
+        "features": Object {
+          "custom-media-queries": true,
+          "custom-properties": false,
+          "nesting-rules": true,
+        },
+        "insertAfter": Object {
+          "nesting-rules": [Function],
+        },
+        "preserve": false,
+        "stage": 3,
+      },
+    ],
+    Array [
+      "postcss-color-function",
+    ],
+  ],
+}
+`;
+
 exports[`should pass options.browsers to postcss-cssnext  1`] = `
 Object {
   "plugins": Array [

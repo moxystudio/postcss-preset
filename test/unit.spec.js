@@ -34,3 +34,7 @@ it('should pass options.url to postcss-url', () => {
 it('should pass options.browsers to postcss-cssnext ', () => {
     expect(preset({ browsers: 'foo' })).toMatchSnapshot();
 });
+
+it('should pass options.browsers to postcss-css-variables ', () => {
+    expect(preset({ cssVariables: { preserve: true } })).toMatchSnapshot();
+});
