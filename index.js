@@ -15,7 +15,7 @@ module.exports = (options) => {
             // Let postcss parse @import statements
             require('postcss-import')(options.import),
             // Process url() statements
-            options.url && require('postcss-url')(options.url !== true ? options.url : undefined),
+            options.url && require('postcss-url')(options.url),
             // Add support for CSS mixins
             require('postcss-mixins')(options.mixins),
             // Add support for @if and @else statements
@@ -34,9 +34,9 @@ module.exports = (options) => {
                     'custom-media-queries': true,
                     'nesting-rules': true,
                 },
-                insertAfter: {
-                    'nesting-rules': require('postcss-css-variables')(options.cssVariables),
-                },
+                insertAfter: options.cssVariables ?
+                    { 'nesting-rules': require('postcss-css-variables')(options.cssVariables) } :
+                    undefined,
                 autoprefixer: {
                     // We don't use prefixes unless they are really necessary, e.g.: when dealing with quirks
                     // Therefore, we disable removing them

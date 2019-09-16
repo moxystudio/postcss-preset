@@ -23,18 +23,22 @@ it('should pass options.mixins to postcss-mixins ', () => {
     expect(preset({ mixins: 'foo' })).toMatchSnapshot();
 });
 
-it('should enable postcss-url if options.url is true', () => {
-    expect(preset({ url: true })).toMatchSnapshot();
+it('should disable postcss-url if options.url is false', () => {
+    expect(preset({ url: false })).toMatchSnapshot();
 });
 
 it('should pass options.url to postcss-url', () => {
     expect(preset({ url: { foo: 'bar' } })).toMatchSnapshot();
 });
 
-it('should pass options.browsers to postcss-cssnext ', () => {
+it('should pass options.browsers to postcss-preset-env ', () => {
     expect(preset({ browsers: 'foo' })).toMatchSnapshot();
 });
 
-it('should pass options.browsers to postcss-css-variables ', () => {
+it('should disable postcss-css-variables if options.cssVariables is false', () => {
+    expect(preset({ cssVariables: false })).toMatchSnapshot();
+});
+
+it('should pass options.cssVariables to postcss-css-variables', () => {
     expect(preset({ cssVariables: { preserve: true } })).toMatchSnapshot();
 });

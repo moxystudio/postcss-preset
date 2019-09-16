@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should enable postcss-url if options.url is true 1`] = `
+exports[`should disable postcss-css-variables if options.cssVariables is false 1`] = `
 Object {
   "plugins": Array [
     Array [
@@ -8,6 +8,50 @@ Object {
     ],
     Array [
       "postcss-url",
+      Object {
+        "url": "rebase",
+      },
+    ],
+    Array [
+      "postcss-mixins",
+    ],
+    Array [
+      "postcss-conditionals",
+    ],
+    Array [
+      "postcss-preset-env",
+      Object {
+        "autoprefixer": Object {
+          "overrideBrowserslist": Array [
+            "extends browserslist-config-google",
+          ],
+          "remove": false,
+        },
+        "browsers": Array [
+          "extends browserslist-config-google",
+        ],
+        "features": Object {
+          "custom-media-queries": true,
+          "custom-properties": false,
+          "nesting-rules": true,
+        },
+        "insertAfter": undefined,
+        "preserve": false,
+        "stage": 3,
+      },
+    ],
+    Array [
+      "postcss-color-function",
+    ],
+  ],
+}
+`;
+
+exports[`should disable postcss-url if options.url is false 1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "postcss-import",
     ],
     Array [
       "postcss-mixins",
@@ -95,7 +139,52 @@ Object {
 }
 `;
 
-exports[`should pass options.browsers to postcss-css-variables  1`] = `
+exports[`should pass options.browsers to postcss-preset-env  1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "postcss-import",
+    ],
+    Array [
+      "postcss-url",
+      Object {
+        "url": "rebase",
+      },
+    ],
+    Array [
+      "postcss-mixins",
+    ],
+    Array [
+      "postcss-conditionals",
+    ],
+    Array [
+      "postcss-preset-env",
+      Object {
+        "autoprefixer": Object {
+          "overrideBrowserslist": "foo",
+          "remove": false,
+        },
+        "browsers": "foo",
+        "features": Object {
+          "custom-media-queries": true,
+          "custom-properties": false,
+          "nesting-rules": true,
+        },
+        "insertAfter": Object {
+          "nesting-rules": [Function],
+        },
+        "preserve": false,
+        "stage": 3,
+      },
+    ],
+    Array [
+      "postcss-color-function",
+    ],
+  ],
+}
+`;
+
+exports[`should pass options.cssVariables to postcss-css-variables 1`] = `
 Object {
   "plugins": Array [
     Array [
@@ -125,51 +214,6 @@ Object {
         "browsers": Array [
           "extends browserslist-config-google",
         ],
-        "features": Object {
-          "custom-media-queries": true,
-          "custom-properties": false,
-          "nesting-rules": true,
-        },
-        "insertAfter": Object {
-          "nesting-rules": [Function],
-        },
-        "preserve": false,
-        "stage": 3,
-      },
-    ],
-    Array [
-      "postcss-color-function",
-    ],
-  ],
-}
-`;
-
-exports[`should pass options.browsers to postcss-cssnext  1`] = `
-Object {
-  "plugins": Array [
-    Array [
-      "postcss-import",
-    ],
-    Array [
-      "postcss-url",
-      Object {
-        "url": "rebase",
-      },
-    ],
-    Array [
-      "postcss-mixins",
-    ],
-    Array [
-      "postcss-conditionals",
-    ],
-    Array [
-      "postcss-preset-env",
-      Object {
-        "autoprefixer": Object {
-          "overrideBrowserslist": "foo",
-          "remove": false,
-        },
-        "browsers": "foo",
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
