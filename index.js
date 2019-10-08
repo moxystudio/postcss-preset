@@ -48,6 +48,8 @@ module.exports = (options = {}) => {
             }),
             // Add support for `alpha()` and other color utilities
             require('postcss-color-function')(),
+            // Lets you reduce calc() references whenever it's possible
+            require('postcss-calc')(),
         ].filter(Boolean),
     };
 };

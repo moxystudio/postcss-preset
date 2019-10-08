@@ -13,7 +13,8 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
     background: url(\\"data:image/png;base64,\\");
     background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
     background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-    padding: calc(20px * 2);
+    padding: 40px;
+    margin-top: calc(10px + 10vh);
         border-color: blue
 }
 
@@ -24,7 +25,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 
     .image {
-    padding: calc(30px * 2)
+    padding: 60px
     }
 }
 
@@ -48,7 +49,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
             background: url(\\"data:image/png;base64,\\");
             background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
             background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            padding: calc(20px * 2);
+            padding: 40px;
                 border-color: blue
         }
 
@@ -59,7 +60,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 
     .image .bar a {
-            padding: calc(30px * 2)
+            padding: 60px
     }
 }
 
@@ -72,7 +73,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
             background: url(\\"data:image/png;base64,\\");
             background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
             background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            padding: calc(20px * 2);
+            padding: 40px;
                 border-color: blue
         }
 
@@ -83,7 +84,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 
     .image .bar .link {
-            padding: calc(30px * 2)
+            padding: 60px
     }
 }
 
@@ -96,7 +97,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
                 background: url(\\"data:image/png;base64,\\");
                 background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                 background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                padding: calc(20px * 2);
+                padding: 40px;
                     border-color: blue
             }
 
@@ -107,7 +108,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 
     .image .bar a:hover {
-                padding: calc(30px * 2)
+                padding: 60px
     }
 }
 
@@ -120,7 +121,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
                 background: url(\\"data:image/png;base64,\\");
                 background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                 background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                padding: calc(20px * 2);
+                padding: 40px;
                     border-color: blue
             }
 
@@ -131,7 +132,7 @@ exports[`should generate correct output for fixtures/example.css 1`] = `
 
 
     .image .bar .link:hover {
-                padding: calc(30px * 2)
+                padding: 60px
     }
 }
 
