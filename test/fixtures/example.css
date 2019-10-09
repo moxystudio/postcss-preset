@@ -18,10 +18,33 @@
     font-family: Verdana;
 }
 
+@define-mixin position $type: absolute, $top: null, $right: null, $bottom: null, $left: null {
+    position: $type;
+
+    @if $top != null {
+        top: $top;
+    }
+
+    @if $right != null {
+        right: $right;
+    }
+
+    @if $bottom != null {
+        bottom: $bottom;
+    }
+
+    @if $left != null {
+        left: $left;
+    }
+}
+
+
 .image {
+    @mixin position absolute, var(--padding), 10px, null, null;
+    @mixin font-default;
+
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    @mixin font-default;
     color: var(--color-red);
     background: url("image.png");
     background-image: image-set(url("image.png") 1x, url("image.png") 2x);
@@ -35,6 +58,7 @@
         & a,
         & .link {
             @mixin font-default;
+
             color: var(--color-red);
             background: var(--image-url);
             background-image: image-set(url("image.png") 1x, var(--image-url) 2x);
@@ -47,6 +71,7 @@
 
             &:hover {
                 @mixin font-default;
+
                 color: var(--color-red);
                 background: url("image.png");
                 background-image: image-set(url("image.png") 1x, url("image.png") 2x);

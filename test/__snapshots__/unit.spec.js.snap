@@ -12,11 +12,12 @@ Object {
         "url": "rebase",
       },
     ],
+    [Function],
     Array [
-      "postcss-mixins",
-    ],
-    Array [
-      "postcss-conditionals",
+      "postcss-advanced-variables",
+      Object {
+        "disable": "@mixin, @include, @content, @import",
+      },
     ],
     Array [
       "postcss-preset-env",
@@ -53,11 +54,12 @@ Object {
     Array [
       "postcss-import",
     ],
+    [Function],
     Array [
-      "postcss-mixins",
-    ],
-    Array [
-      "postcss-conditionals",
+      "postcss-advanced-variables",
+      Object {
+        "disable": "@mixin, @include, @content, @import",
+      },
     ],
     Array [
       "postcss-preset-env",
@@ -102,11 +104,60 @@ Object {
         "url": "rebase",
       },
     ],
+    [Function],
     Array [
-      "postcss-mixins",
+      "postcss-advanced-variables",
+      Object {
+        "disable": "@mixin, @include, @content, @import",
+      },
     ],
     Array [
-      "postcss-conditionals",
+      "postcss-preset-env",
+      Object {
+        "autoprefixer": Object {
+          "overrideBrowserslist": Array [
+            "extends browserslist-config-google",
+          ],
+          "remove": false,
+        },
+        "browsers": Array [
+          "extends browserslist-config-google",
+        ],
+        "features": Object {
+          "custom-media-queries": true,
+          "custom-properties": false,
+          "nesting-rules": true,
+        },
+        "insertAfter": Object {
+          "nesting-rules": [Function],
+        },
+        "preserve": false,
+        "stage": 3,
+      },
+    ],
+    Array [
+      "postcss-color-function",
+    ],
+  ],
+}
+`;
+
+exports[`should pass options.advancedVariables to postcss-advanced-variables  1`] = `
+Object {
+  "plugins": Array [
+    Array [
+      "postcss-import",
+    ],
+    Array [
+      "postcss-url",
+      Object {
+        "url": "rebase",
+      },
+    ],
+    [Function],
+    Array [
+      "postcss-advanced-variables",
+      "foo",
     ],
     Array [
       "postcss-preset-env",
@@ -151,11 +202,12 @@ Object {
         "url": "rebase",
       },
     ],
+    [Function],
     Array [
-      "postcss-mixins",
-    ],
-    Array [
-      "postcss-conditionals",
+      "postcss-advanced-variables",
+      Object {
+        "disable": "@mixin, @include, @content, @import",
+      },
     ],
     Array [
       "postcss-preset-env",
@@ -196,11 +248,12 @@ Object {
         "url": "rebase",
       },
     ],
+    [Function],
     Array [
-      "postcss-mixins",
-    ],
-    Array [
-      "postcss-conditionals",
+      "postcss-advanced-variables",
+      Object {
+        "disable": "@mixin, @include, @content, @import",
+      },
     ],
     Array [
       "postcss-preset-env",
@@ -246,11 +299,12 @@ Object {
         "url": "rebase",
       },
     ],
+    [Function],
     Array [
-      "postcss-mixins",
-    ],
-    Array [
-      "postcss-conditionals",
+      "postcss-advanced-variables",
+      Object {
+        "disable": "@mixin, @include, @content, @import",
+      },
     ],
     Array [
       "postcss-preset-env",
@@ -295,12 +349,12 @@ Object {
         "url": "rebase",
       },
     ],
+    [Function],
     Array [
-      "postcss-mixins",
-      "foo",
-    ],
-    Array [
-      "postcss-conditionals",
+      "postcss-advanced-variables",
+      Object {
+        "disable": "@mixin, @include, @content, @import",
+      },
     ],
     Array [
       "postcss-preset-env",
@@ -345,11 +399,12 @@ Object {
         "foo": "bar",
       },
     ],
+    [Function],
     Array [
-      "postcss-mixins",
-    ],
-    Array [
-      "postcss-conditionals",
+      "postcss-advanced-variables",
+      Object {
+        "disable": "@mixin, @include, @content, @import",
+      },
     ],
     Array [
       "postcss-preset-env",
