@@ -24,17 +24,13 @@
     "lint": "eslint .",
     "test": "jest --env node --coverage",
     "prerelease": "npm t && npm run lint",
-    "release": "standard-version"
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags origin master && npm publish"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -e $GIT_PARAMS"
-    }
-  },
-  "standard-version": {
-    "scripts": {
-      "posttag": "git push --follow-tags origin master"
     }
   },
   "lint-staged": {
