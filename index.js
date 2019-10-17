@@ -1,9 +1,10 @@
 'use strict';
 
-module.exports = (options) => {
+module.exports = (options = {}) => {
     options = {
         import: undefined,
-        mixins: undefined,
+        mixins: { mixinsDir: './src/styles/mixins' },
+        advancedVariables: { ...options.advancedVariables, disable: '@mixin, @include, @content, @import' }, // Ignore @mixin, @include, @content and @import at-rules
         browsers: ['extends browserslist-config-google'],
         cssVariables: { preserveAtRulesOrder: true },
         url: { url: 'rebase' },
@@ -18,8 +19,8 @@ module.exports = (options) => {
             options.url && require('postcss-url')(options.url),
             // Add support for CSS mixins
             require('postcss-mixins')(options.mixins),
-            // Add support for @if and @else statements
-            require('postcss-conditionals')(),
+            // Add support for iterators (@for and @each) and conditionals (@if and @else)
+            require('postcss-advanced-variables')(options.advancedVariables),
             // Use postcss-preset-env to enable plugins to transform official CSS features
             // to be compatible in older browsers
             require('postcss-preset-env')({

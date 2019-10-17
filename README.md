@@ -33,7 +33,7 @@ If you are developing a project that uses new CSS language features and must wor
 - Enables [postcss-import](https://github.com/postcss/postcss-import) so that `@import` statements are inlined
 - Optionally enables [postcss-url](https://github.com/postcss/postcss-url) so that `url()` statements are processed
 - Enables [postcss-mixins](https://github.com/postcss/postcss-mixins) so that you can define mixins
-- Enables [postcss-conditionals](https://github.com/andyjansson/postcss-conditionals) so that you can use `@if` and `@else` statements, useful inside mixins
+- Enables [postcss-advanced-variables](https://github.com/jonathantneal/postcss-advanced-variables) add support for iterators (@for and @each)and conditionals (@if and @else)
 - Enables [postcss-color-function](https://github.com/postcss/postcss-color-function) so that you can use `alpha`, `lightness` and other color utilities
 
 
@@ -51,6 +51,7 @@ module.exports = require('postcss-preset-moxy')();
 module.exports = require('postcss-preset-moxy')({
     import: { path: './src/styles' },
     mixins: { mixinsDir: './src/styles/mixins' },
+    advancedVariables: { unresolved: 'warn' },
 });
 ```
 
@@ -60,6 +61,7 @@ Available options:
 | ------ | ------------- | -------- | ------- |
 | import | Options to pass to [postcss-import](https://github.com/postcss/postcss-import#path) | Object | undefined |
 | mixins | Options to pass to [postcss-mixins](https://github.com/postcss/postcss-mixins#mixinsdir) | Object | undefined |
+| advancedVariables | Options to pass to [postcss-advanced-variables](https://github.com/jonathantneal/postcss-advanced-variables#options) | Object | undefined |
 | cssVariables | Options to pass to [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables), false disables the plugin | Object/boolean | `{ preserveAtRulesOrder: true }` |
 | url | Options to pass to [postcss-url](https://github.com/postcss/postcss-url), false disables any transpilation of `url()` declarations | Array/Object/boolean | `{ url: 'rebase' }` |
 | browsers | Supported browsers list to pass to [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) | Array | [browserslist-config-google](https://github.com/awkaiser/browserslist-config-google) |
