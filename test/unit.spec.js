@@ -5,6 +5,8 @@ const preset = require('..');
 jest.mock('postcss-import', () => (options) => ['postcss-import', options].filter((val) => val));
 jest.mock('postcss-url', () => (options) => ['postcss-url', options].filter((val) => val));
 jest.mock('postcss-advanced-variables', () => (options) => ['postcss-advanced-variables', options].filter((val) => val));
+jest.mock('postcss-mixins', () => (options) => ['postcss-mixins', options].filter((val) => val));
+jest.mock('postcss-calc', () => (options) => ['postcss-calc', options].filter((val) => val));
 jest.mock('postcss-preset-env', () => (options) => ['postcss-preset-env', options].filter((val) => val));
 jest.mock('postcss-color-function', () => (options) => ['postcss-color-function', options].filter((val) => val));
 
