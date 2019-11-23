@@ -1,5 +1,5 @@
 {
-  "name": "postcss-preset-moxy",
+  "name": "@moxy/postcss-preset",
   "description": "PostCSS preset to be used at MOXY",
   "version": "4.3.0",
   "keywords": [
@@ -10,10 +10,10 @@
     "transpile"
   ],
   "author": "André Cruz <andre@moxy.studio>",
-  "homepage": "https://github.com/moxystudio/postcss-preset-moxy",
+  "homepage": "https://github.com/moxystudio/postcss-preset",
   "repository": {
     "type": "git",
-    "url": "git@github.com:moxystudio/postcss-preset-moxy.git"
+    "url": "git@github.com:moxystudio/postcss-preset.git"
   },
   "license": "MIT",
   "main": "index.js",
@@ -46,9 +46,9 @@
   },
   "dependencies": {
     "browserslist-config-google": "^1.5.0",
-    "postcss-color-function": "^4.0.1",
-    "postcss-advanced-variables": "^2.3.2",
+    "postcss-advanced-variables": "^3.0.0",
     "postcss-calc": "^7.0.1",
+    "postcss-color-function": "^4.0.1",
     "postcss-css-variables": "^0.13.0",
     "postcss-import": "^12.0.0",
     "postcss-mixins": "^6.2.0",
@@ -58,8 +58,8 @@
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
+    "@moxy/eslint-config": "^9.1.2",
     "eslint": "^6.5.1",
-    "eslint-config-moxy": "^9.1.0",
     "husky": "^3.0.9",
     "jest": "^24.5.0",
     "jest-serializer-path": "^0.1.15",

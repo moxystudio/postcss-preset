@@ -1,25 +1,25 @@
-# postcss-preset-moxy
+# postcss-preset
 
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url]
 
-[npm-url]:https://npmjs.org/package/postcss-preset-moxy
-[npm-image]:http://img.shields.io/npm/v/postcss-preset-moxy.svg
-[downloads-image]:http://img.shields.io/npm/dm/postcss-preset-moxy.svg
-[travis-url]:https://travis-ci.org/moxystudio/postcss-preset-moxy
-[travis-image]:http://img.shields.io/travis/moxystudio/postcss-preset-moxy/master.svg
-[codecov-url]:https://codecov.io/gh/moxystudio/postcss-preset-moxy
-[codecov-image]:https://img.shields.io/codecov/c/github/moxystudio/postcss-preset-moxy/master.svg
-[david-dm-url]:https://david-dm.org/moxystudio/postcss-preset-moxy
-[david-dm-image]:https://img.shields.io/david/moxystudio/postcss-preset-moxy.svg
-[david-dm-dev-url]:https://david-dm.org/moxystudio/postcss-preset-moxy?type=dev
-[david-dm-dev-image]:https://img.shields.io/david/dev/moxystudio/postcss-preset-moxy.svg
+[npm-url]:https://npmjs.org/package/@moxy/postcss-preset
+[npm-image]:http://img.shields.io/npm/v/@moxy/postcss-preset.svg
+[downloads-image]:http://img.shields.io/npm/dm/@moxy/postcss-preset.svg
+[travis-url]:https://travis-ci.org/moxystudio/postcss-preset
+[travis-image]:http://img.shields.io/travis/moxystudio/postcss-preset/master.svg
+[codecov-url]:https://codecov.io/gh/moxystudio/postcss-preset
+[codecov-image]:https://img.shields.io/codecov/c/github/moxystudio/postcss-preset/master.svg
+[david-dm-url]:https://david-dm.org/moxystudio/postcss-preset
+[david-dm-image]:https://img.shields.io/david/moxystudio/postcss-preset.svg
+[david-dm-dev-url]:https://david-dm.org/moxystudio/postcss-preset?type=dev
+[david-dm-dev-image]:https://img.shields.io/david/dev/moxystudio/postcss-preset.svg
 
 [PostCSS](http://cssnext.io/) preset to be used at MOXY.
 
 
 ## Installation
 
-`$ npm install postcss-preset-moxy --save-dev`
+`$ npm install @moxy/postcss-preset --save-dev`
 
 You might need to also install [postcss-cli](https://github.com/postcss/postcss-cli) as a dev dependency.
 
@@ -43,13 +43,13 @@ If you are developing a project that uses new CSS language features and must wor
 Create `postcss.config.js` at the root of your project:
 
 ```js
-module.exports = require('postcss-preset-moxy')();
+module.exports = require('@moxy/postcss-preset')();
 ```
 
 ...or with options
 
 ```js
-module.exports = require('postcss-preset-moxy')({
+module.exports = require('@moxy/postcss-preset')({
     import: { path: './src/styles' },
     mixins: { mixinsDir: './src/styles/mixins' },
     advancedVariables: { unresolved: 'warn' },
@@ -70,7 +70,7 @@ Available options:
 The [postcss-url](https://github.com/postcss/postcss-url) plugin is enabled by default. You may disable it like so:
 
 ```js
-module.exports = require('postcss-preset-moxy')({
+module.exports = require('@moxy/postcss-preset')({
     url: false,
 });
 ```
