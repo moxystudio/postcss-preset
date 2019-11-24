@@ -3,10 +3,10 @@
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url]
 
 [npm-url]:https://npmjs.org/package/@moxy/postcss-preset
-[npm-image]:http://img.shields.io/npm/v/@moxy/postcss-preset.svg
-[downloads-image]:http://img.shields.io/npm/dm/@moxy/postcss-preset.svg
+[npm-image]:https://img.shields.io/npm/v/@moxy/postcss-preset.svg
+[downloads-image]:https://img.shields.io/npm/dm/@moxy/postcss-preset.svg
 [travis-url]:https://travis-ci.org/moxystudio/postcss-preset
-[travis-image]:http://img.shields.io/travis/moxystudio/postcss-preset/master.svg
+[travis-image]:https://img.shields.io/travis/moxystudio/postcss-preset/master.svg
 [codecov-url]:https://codecov.io/gh/moxystudio/postcss-preset
 [codecov-image]:https://img.shields.io/codecov/c/github/moxystudio/postcss-preset/master.svg
 [david-dm-url]:https://david-dm.org/moxystudio/postcss-preset
