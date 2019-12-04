@@ -33,7 +33,7 @@ If you are developing a project that uses new CSS language features and must wor
 - Enables [postcss-import](https://github.com/postcss/postcss-import) so that `@import` statements are inlined
 - Optionally enables [postcss-url](https://github.com/postcss/postcss-url) so that `url()` statements are processed
 - Enables [postcss-mixins](https://github.com/postcss/postcss-mixins) so that you can define mixins
-- Enables [postcss-advanced-variables](https://github.com/jonathantneal/postcss-advanced-variables) add support for iterators (@for and @each)and conditionals (@if and @else)
+- Enables [postcss-advanced-variables](https://github.com/jonathantneal/postcss-advanced-variables) add support for iterators (@for and @each) and conditionals (@if and @else)
 - Enables [postcss-calc](https://github.com/postcss/postcss-calc) so that `calc()` references are reduced whenever it's possible
 - Enables [postcss-color-function](https://github.com/postcss/postcss-color-function) so that you can use `alpha`, `lightness` and other color utilities
 
