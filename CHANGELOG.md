@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.4.0](https://github.com/moxystudio/postcss-preset/compare/v4.3.0...v4.4.0) (2019-12-13)
+
+
+### Features
+
+* add postcss-calc ([#32](https://github.com/moxystudio/postcss-preset/issues/32)) ([ac43d5d](https://github.com/moxystudio/postcss-preset/commit/ac43d5d603b08eaaed07bec1e8648bc51ac65efd))
+* add support for iterators and better conditionals ([d860867](https://github.com/moxystudio/postcss-preset/commit/d860867697e99efe9054799285b95a9f304f508b)), closes [#33](https://github.com/moxystudio/postcss-preset/issues/33)
+
 ## [4.3.0](https://github.com/moxystudio/postcss-preset/compare/v4.2.0...v4.3.0) (2019-09-16)
 
 
