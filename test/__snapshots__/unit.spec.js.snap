@@ -4,28 +4,29 @@ exports[`should disable postcss-css-variables if options.cssVariables is false 1
 Object {
   "plugins": Array [
     Array [
-      "postcss-import",
+      "<PROJECT_ROOT>/node_modules/postcss-import/index.js",
+      Object {},
     ],
     Array [
-      "postcss-url",
+      "<PROJECT_ROOT>/node_modules/postcss-url/src/index.js",
       Object {
         "url": "rebase",
       },
     ],
     Array [
-      "postcss-mixins",
+      "<PROJECT_ROOT>/node_modules/postcss-mixins/index.js",
       Object {
         "mixinsDir": "./src/styles/mixins",
       },
     ],
     Array [
-      "postcss-advanced-variables",
+      "<PROJECT_ROOT>/node_modules/postcss-advanced-variables/index.js",
       Object {
         "disable": "@mixin, @include, @content, @import",
       },
     ],
     Array [
-      "postcss-preset-env",
+      "<PROJECT_ROOT>/node_modules/postcss-preset-env/index.js",
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
@@ -47,10 +48,12 @@ Object {
       },
     ],
     Array [
-      "postcss-color-function",
+      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
+      Object {},
     ],
     Array [
-      "postcss-calc",
+      "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
+      Object {},
     ],
   ],
 }
@@ -60,22 +63,23 @@ exports[`should disable postcss-url if options.url is false 1`] = `
 Object {
   "plugins": Array [
     Array [
-      "postcss-import",
+      "<PROJECT_ROOT>/node_modules/postcss-import/index.js",
+      Object {},
     ],
     Array [
-      "postcss-mixins",
+      "<PROJECT_ROOT>/node_modules/postcss-mixins/index.js",
       Object {
         "mixinsDir": "./src/styles/mixins",
       },
     ],
     Array [
-      "postcss-advanced-variables",
+      "<PROJECT_ROOT>/node_modules/postcss-advanced-variables/index.js",
       Object {
         "disable": "@mixin, @include, @content, @import",
       },
     ],
     Array [
-      "postcss-preset-env",
+      "<PROJECT_ROOT>/node_modules/postcss-preset-env/index.js",
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
@@ -99,10 +103,12 @@ Object {
       },
     ],
     Array [
-      "postcss-color-function",
+      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
+      Object {},
     ],
     Array [
-      "postcss-calc",
+      "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
+      Object {},
     ],
   ],
 }
@@ -112,28 +118,29 @@ exports[`should have a good base config 1`] = `
 Object {
   "plugins": Array [
     Array [
-      "postcss-import",
+      "<PROJECT_ROOT>/node_modules/postcss-import/index.js",
+      Object {},
     ],
     Array [
-      "postcss-url",
+      "<PROJECT_ROOT>/node_modules/postcss-url/src/index.js",
       Object {
         "url": "rebase",
       },
     ],
     Array [
-      "postcss-mixins",
+      "<PROJECT_ROOT>/node_modules/postcss-mixins/index.js",
       Object {
         "mixinsDir": "./src/styles/mixins",
       },
     ],
     Array [
-      "postcss-advanced-variables",
+      "<PROJECT_ROOT>/node_modules/postcss-advanced-variables/index.js",
       Object {
         "disable": "@mixin, @include, @content, @import",
       },
     ],
     Array [
-      "postcss-preset-env",
+      "<PROJECT_ROOT>/node_modules/postcss-preset-env/index.js",
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
@@ -157,10 +164,12 @@ Object {
       },
     ],
     Array [
-      "postcss-color-function",
+      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
+      Object {},
     ],
     Array [
-      "postcss-calc",
+      "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
+      Object {},
     ],
   ],
 }
@@ -170,26 +179,27 @@ exports[`should pass options.advancedVariables to postcss-advanced-variables  1`
 Object {
   "plugins": Array [
     Array [
-      "postcss-import",
+      "<PROJECT_ROOT>/node_modules/postcss-import/index.js",
+      Object {},
     ],
     Array [
-      "postcss-url",
+      "<PROJECT_ROOT>/node_modules/postcss-url/src/index.js",
       Object {
         "url": "rebase",
       },
     ],
     Array [
-      "postcss-mixins",
+      "<PROJECT_ROOT>/node_modules/postcss-mixins/index.js",
       Object {
         "mixinsDir": "./src/styles/mixins",
       },
     ],
     Array [
-      "postcss-advanced-variables",
+      "<PROJECT_ROOT>/node_modules/postcss-advanced-variables/index.js",
       "foo",
     ],
     Array [
-      "postcss-preset-env",
+      "<PROJECT_ROOT>/node_modules/postcss-preset-env/index.js",
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
@@ -213,10 +223,12 @@ Object {
       },
     ],
     Array [
-      "postcss-color-function",
+      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
+      Object {},
     ],
     Array [
-      "postcss-calc",
+      "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
+      Object {},
     ],
   ],
 }
@@ -226,28 +238,29 @@ exports[`should pass options.browsers to postcss-preset-env  1`] = `
 Object {
   "plugins": Array [
     Array [
-      "postcss-import",
+      "<PROJECT_ROOT>/node_modules/postcss-import/index.js",
+      Object {},
     ],
     Array [
-      "postcss-url",
+      "<PROJECT_ROOT>/node_modules/postcss-url/src/index.js",
       Object {
         "url": "rebase",
       },
     ],
     Array [
-      "postcss-mixins",
+      "<PROJECT_ROOT>/node_modules/postcss-mixins/index.js",
       Object {
         "mixinsDir": "./src/styles/mixins",
       },
     ],
     Array [
-      "postcss-advanced-variables",
+      "<PROJECT_ROOT>/node_modules/postcss-advanced-variables/index.js",
       Object {
         "disable": "@mixin, @include, @content, @import",
       },
     ],
     Array [
-      "postcss-preset-env",
+      "<PROJECT_ROOT>/node_modules/postcss-preset-env/index.js",
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": "foo",
@@ -267,10 +280,12 @@ Object {
       },
     ],
     Array [
-      "postcss-color-function",
+      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
+      Object {},
     ],
     Array [
-      "postcss-calc",
+      "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
+      Object {},
     ],
   ],
 }
@@ -280,28 +295,29 @@ exports[`should pass options.cssVariables to postcss-css-variables 1`] = `
 Object {
   "plugins": Array [
     Array [
-      "postcss-import",
+      "<PROJECT_ROOT>/node_modules/postcss-import/index.js",
+      Object {},
     ],
     Array [
-      "postcss-url",
+      "<PROJECT_ROOT>/node_modules/postcss-url/src/index.js",
       Object {
         "url": "rebase",
       },
     ],
     Array [
-      "postcss-mixins",
+      "<PROJECT_ROOT>/node_modules/postcss-mixins/index.js",
       Object {
         "mixinsDir": "./src/styles/mixins",
       },
     ],
     Array [
-      "postcss-advanced-variables",
+      "<PROJECT_ROOT>/node_modules/postcss-advanced-variables/index.js",
       Object {
         "disable": "@mixin, @include, @content, @import",
       },
     ],
     Array [
-      "postcss-preset-env",
+      "<PROJECT_ROOT>/node_modules/postcss-preset-env/index.js",
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
@@ -325,10 +341,12 @@ Object {
       },
     ],
     Array [
-      "postcss-color-function",
+      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
+      Object {},
     ],
     Array [
-      "postcss-calc",
+      "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
+      Object {},
     ],
   ],
 }
@@ -338,29 +356,29 @@ exports[`should pass options.import to postcss-import  1`] = `
 Object {
   "plugins": Array [
     Array [
-      "postcss-import",
+      "<PROJECT_ROOT>/node_modules/postcss-import/index.js",
       "foo",
     ],
     Array [
-      "postcss-url",
+      "<PROJECT_ROOT>/node_modules/postcss-url/src/index.js",
       Object {
         "url": "rebase",
       },
     ],
     Array [
-      "postcss-mixins",
+      "<PROJECT_ROOT>/node_modules/postcss-mixins/index.js",
       Object {
         "mixinsDir": "./src/styles/mixins",
       },
     ],
     Array [
-      "postcss-advanced-variables",
+      "<PROJECT_ROOT>/node_modules/postcss-advanced-variables/index.js",
       Object {
         "disable": "@mixin, @include, @content, @import",
       },
     ],
     Array [
-      "postcss-preset-env",
+      "<PROJECT_ROOT>/node_modules/postcss-preset-env/index.js",
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
@@ -384,10 +402,12 @@ Object {
       },
     ],
     Array [
-      "postcss-color-function",
+      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
+      Object {},
     ],
     Array [
-      "postcss-calc",
+      "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
+      Object {},
     ],
   ],
 }
@@ -397,26 +417,27 @@ exports[`should pass options.mixins to postcss-mixins  1`] = `
 Object {
   "plugins": Array [
     Array [
-      "postcss-import",
+      "<PROJECT_ROOT>/node_modules/postcss-import/index.js",
+      Object {},
     ],
     Array [
-      "postcss-url",
+      "<PROJECT_ROOT>/node_modules/postcss-url/src/index.js",
       Object {
         "url": "rebase",
       },
     ],
     Array [
-      "postcss-mixins",
+      "<PROJECT_ROOT>/node_modules/postcss-mixins/index.js",
       "foo",
     ],
     Array [
-      "postcss-advanced-variables",
+      "<PROJECT_ROOT>/node_modules/postcss-advanced-variables/index.js",
       Object {
         "disable": "@mixin, @include, @content, @import",
       },
     ],
     Array [
-      "postcss-preset-env",
+      "<PROJECT_ROOT>/node_modules/postcss-preset-env/index.js",
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
@@ -440,10 +461,12 @@ Object {
       },
     ],
     Array [
-      "postcss-color-function",
+      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
+      Object {},
     ],
     Array [
-      "postcss-calc",
+      "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
+      Object {},
     ],
   ],
 }
@@ -453,28 +476,29 @@ exports[`should pass options.url to postcss-url 1`] = `
 Object {
   "plugins": Array [
     Array [
-      "postcss-import",
+      "<PROJECT_ROOT>/node_modules/postcss-import/index.js",
+      Object {},
     ],
     Array [
-      "postcss-url",
+      "<PROJECT_ROOT>/node_modules/postcss-url/src/index.js",
       Object {
         "foo": "bar",
       },
     ],
     Array [
-      "postcss-mixins",
+      "<PROJECT_ROOT>/node_modules/postcss-mixins/index.js",
       Object {
         "mixinsDir": "./src/styles/mixins",
       },
     ],
     Array [
-      "postcss-advanced-variables",
+      "<PROJECT_ROOT>/node_modules/postcss-advanced-variables/index.js",
       Object {
         "disable": "@mixin, @include, @content, @import",
       },
     ],
     Array [
-      "postcss-preset-env",
+      "<PROJECT_ROOT>/node_modules/postcss-preset-env/index.js",
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
@@ -498,10 +522,12 @@ Object {
       },
     ],
     Array [
-      "postcss-color-function",
+      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
+      Object {},
     ],
     Array [
-      "postcss-calc",
+      "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
+      Object {},
     ],
   ],
 }
