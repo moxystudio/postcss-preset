@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.4.1](https://github.com/moxystudio/postcss-preset/compare/v4.4.0...v4.4.1) (2020-01-17)
+
+
+### Bug Fixes
+
+* change return structure to a standard and default options ([#35](https://github.com/moxystudio/postcss-preset/issues/35)) ([0a8d248](https://github.com/moxystudio/postcss-preset/commit/0a8d248bb425804f205903e1ca6276ce5d9a53fc))
+
 ## [4.4.0](https://github.com/moxystudio/postcss-preset/compare/v4.3.0...v4.4.0) (2019-12-13)
 
 
