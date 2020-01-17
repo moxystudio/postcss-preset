@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "test": "jest --env node --coverage",
+    "test": "jest",
     "prerelease": "npm t && npm run lint",
     "release": "standard-version",
     "postrelease": "git push --follow-tags origin HEAD && npm publish"
@@ -59,6 +59,7 @@
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@moxy/eslint-config": "^9.1.2",
+    "@moxy/jest-config": "^1.2.0",
     "eslint": "^6.5.1",
     "husky": "^3.0.9",
     "jest": "^24.5.0",

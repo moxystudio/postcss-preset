@@ -12,7 +12,11 @@ const postcssInstance = (() => {
 
     const instance = postcss();
 
-    plugins.forEach((plugin) => instance.use(plugin));
+    const pluginsEntries = Object.entries(plugins);
+
+    pluginsEntries.forEach(([path, options]) => {
+        instance.use(require(path)(options));
+    });
 
     return instance;
 })();
