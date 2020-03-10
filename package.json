@@ -30,13 +30,12 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -e $GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "commitlint": {
@@ -45,7 +44,7 @@
     ]
   },
   "dependencies": {
-    "browserslist-config-google": "^1.5.0",
+    "browserslist-config-google": "^2.0.0",
     "postcss-advanced-variables": "^3.0.0",
     "postcss-calc": "^7.0.1",
     "postcss-color-function": "^4.0.1",
@@ -59,12 +58,11 @@
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@moxy/eslint-config": "^10.1.0",
-    "@moxy/jest-config": "^1.2.0",
+    "@moxy/jest-config": "^1.4.1",
     "eslint": "^6.5.1",
     "husky": "^4.0.10",
-    "jest": "^24.5.0",
-    "jest-serializer-path": "^0.1.15",
-    "lint-staged": "^9.4.2",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.8",
     "lodash.compact": "^3.0.1",
     "postcss": "^7.0.5",
     "standard-version": "^7.0.0"

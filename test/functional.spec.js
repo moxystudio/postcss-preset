@@ -28,7 +28,7 @@ const getOutput = (file) => {
 };
 
 const fixtureFiles = [
-    'fixtures/example.css',
+    'fixtures/example-1.css',
 ];
 
 fixtureFiles.forEach((fixtureFile) => {

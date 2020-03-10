@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should generate correct output for fixtures/example.css 1`] = `
+exports[`should generate correct output for fixtures/example-1.css 1`] = `
 ".image {
     position: absolute;
         top: 20px;
