@@ -42,7 +42,7 @@
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@moxy/eslint-config": "^10.1.0",
-    "@moxy/jest-config": "^1.4.1",
+    "@moxy/jest-config": "^2.0.1",
     "eslint": "^6.5.1",
     "husky": "^4.0.10",
     "jest": "^25.1.0",
