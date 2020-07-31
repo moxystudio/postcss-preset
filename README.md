@@ -60,12 +60,12 @@ Available options:
 
 | Name   | Description   | Type     | Default |
 | ------ | ------------- | -------- | ------- |
-| import | Options to pass to [postcss-import](https://github.com/postcss/postcss-import#path) | Object | `{}` 
+| import | Options to pass to [postcss-import](https://github.com/postcss/postcss-import#path) | Object | `{}` |
 | mixins | Options to pass to [postcss-mixins](https://github.com/postcss/postcss-mixins#mixinsdir) | Object | `{ mixinsDir: './src/styles/mixins' }` |
 | advancedVariables | Options to pass to [postcss-advanced-variables](https://github.com/jonathantneal/postcss-advanced-variables#options) | Object | `{}`¹ |
 | cssVariables | Options to pass to [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables), false disables the plugin | Object/boolean | `{ preserveAtRulesOrder: true }` |
 | url | Options to pass to [postcss-url](https://github.com/postcss/postcss-url), false disables any transpilation of `url()` declarations | Array/Object/boolean | `{ url: 'rebase' }` |
-| browsers | Supported browsers list to pass to [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) | Array | [browserslist-config-google](https://github.com/awkaiser/browserslist-config-google) |
+| browsers | Supported browsers list to pass to [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) | Array | `['extends browserslist-config-google/modern']`, see [browserslist-config-google](https://github.com/awkaiser/browserslist-config-google) (modern)  |
 
 1) `advancedVariables` is not actually empty by default since it contains `{disable: '@mixin, @include, @content, @import'}` but this options can be easily changed by passing the desired `disable` object.
 
