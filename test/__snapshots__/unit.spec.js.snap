@@ -30,12 +30,12 @@ Object {
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
-            "extends browserslist-config-google",
+            "extends browserslist-config-google/modern",
           ],
           "remove": false,
         },
         "browsers": Array [
-          "extends browserslist-config-google",
+          "extends browserslist-config-google/modern",
         ],
         "features": Object {
           "custom-media-queries": true,
@@ -83,12 +83,12 @@ Object {
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
-            "extends browserslist-config-google",
+            "extends browserslist-config-google/modern",
           ],
           "remove": false,
         },
         "browsers": Array [
-          "extends browserslist-config-google",
+          "extends browserslist-config-google/modern",
         ],
         "features": Object {
           "custom-media-queries": true,
@@ -144,12 +144,12 @@ Object {
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
-            "extends browserslist-config-google",
+            "extends browserslist-config-google/modern",
           ],
           "remove": false,
         },
         "browsers": Array [
-          "extends browserslist-config-google",
+          "extends browserslist-config-google/modern",
         ],
         "features": Object {
           "custom-media-queries": true,
@@ -203,12 +203,12 @@ Object {
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
-            "extends browserslist-config-google",
+            "extends browserslist-config-google/modern",
           ],
           "remove": false,
         },
         "browsers": Array [
-          "extends browserslist-config-google",
+          "extends browserslist-config-google/modern",
         ],
         "features": Object {
           "custom-media-queries": true,
@@ -321,12 +321,12 @@ Object {
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
-            "extends browserslist-config-google",
+            "extends browserslist-config-google/modern",
           ],
           "remove": false,
         },
         "browsers": Array [
-          "extends browserslist-config-google",
+          "extends browserslist-config-google/modern",
         ],
         "features": Object {
           "custom-media-queries": true,
@@ -382,12 +382,12 @@ Object {
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
-            "extends browserslist-config-google",
+            "extends browserslist-config-google/modern",
           ],
           "remove": false,
         },
         "browsers": Array [
-          "extends browserslist-config-google",
+          "extends browserslist-config-google/modern",
         ],
         "features": Object {
           "custom-media-queries": true,
@@ -441,12 +441,12 @@ Object {
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
-            "extends browserslist-config-google",
+            "extends browserslist-config-google/modern",
           ],
           "remove": false,
         },
         "browsers": Array [
-          "extends browserslist-config-google",
+          "extends browserslist-config-google/modern",
         ],
         "features": Object {
           "custom-media-queries": true,
@@ -502,12 +502,12 @@ Object {
       Object {
         "autoprefixer": Object {
           "overrideBrowserslist": Array [
-            "extends browserslist-config-google",
+            "extends browserslist-config-google/modern",
           ],
           "remove": false,
         },
         "browsers": Array [
-          "extends browserslist-config-google",
+          "extends browserslist-config-google/modern",
         ],
         "features": Object {
           "custom-media-queries": true,

@@ -5,7 +5,7 @@ module.exports = (options = {}) => {
         import: {},
         mixins: { mixinsDir: './src/styles/mixins' },
         advancedVariables: { disable: '@mixin, @include, @content, @import', ...options.advancedVariables }, // Ignore @mixin, @include, @content and @import at-rules
-        browsers: ['extends browserslist-config-google'],
+        browsers: ['extends browserslist-config-google/modern'],
         cssVariables: { preserveAtRulesOrder: true },
         url: { url: 'rebase' },
         ...options,
@@ -26,10 +26,10 @@ module.exports = (options = {}) => {
             [require.resolve('postcss-preset-env')]: {
                 browsers: options.browsers,
                 stage: 3,
-                // Disable preserve so that the outputed CSS is consistent among all browsers,
+                // Disable preserve so that the outputted CSS is consistent among all browsers,
                 // diminuishing the probability of discovering bugs only when testing in older browsers
                 preserve: false,
-                // Enable features that we want, dispite being proposals yet
+                // Enable features that we want, despite being proposals yet
                 features: {
                     'custom-properties': false,
                     'custom-media-queries': true,
