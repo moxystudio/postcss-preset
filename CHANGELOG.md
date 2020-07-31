@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.5.0](https://github.com/moxystudio/postcss-preset/compare/v4.4.2...v4.5.0) (2020-07-31)
+
+
+### Features
+
+* change to browserslist-config-google/modern ([9cf0524](https://github.com/moxystudio/postcss-preset/commit/9cf05245555d67b3b73c72ff08ed0f3b6a7221ee))
+
 ### [4.4.2](https://github.com/moxystudio/postcss-preset/compare/v4.4.1...v4.4.2) (2020-03-10)
 
 ### [4.4.1](https://github.com/moxystudio/postcss-preset/compare/v4.4.0...v4.4.1) (2020-01-17)
