@@ -19,7 +19,9 @@
 
 ## Installation
 
-`$ npm install @moxy/postcss-preset --save-dev`
+```ssh
+$ npm install @moxy/postcss-preset --save-dev
+```
 
 You might need to also install [postcss-cli](https://github.com/postcss/postcss-cli) as a dev dependency.
 
@@ -80,8 +82,10 @@ module.exports = require('@moxy/postcss-preset')({
 
 ## Tests
 
-`$ npm test`   
-`$ npm test -- --watch` during development
+```sh
+$ npm test
+$ npm test -- --watch # during development
+```
 
 
 ## License
