@@ -5,7 +5,7 @@ module.exports = (options = {}) => {
         import: {},
         mixins: { mixinsDir: './src/styles/mixins' },
         advancedVariables: { disable: '@mixin, @include, @content, @import', ...options.advancedVariables }, // Ignore @mixin, @include, @content and @import at-rules
-        browsers: ['extends browserslist-config-google/modern'],
+        browsers: ['extends browserslist-config-google'],
         cssVariables: { preserveAtRulesOrder: true },
         url: { url: 'rebase' },
         ...options,
