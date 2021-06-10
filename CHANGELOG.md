@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.6.0](https://github.com/moxystudio/postcss-preset/compare/v4.5.3...v4.6.0) (2021-06-10)
+
+
+### Features
+
+* enable dir plugin ([805c7cd](https://github.com/moxystudio/postcss-preset/commit/805c7cd88ef328b746fd27c1f1e4ec667b946266))
+
 ### [4.5.3](https://github.com/moxystudio/postcss-preset/compare/v4.5.2...v4.5.3) (2021-06-05)
 
 ### [4.5.2](https://github.com/moxystudio/postcss-preset/compare/v4.5.1...v4.5.2) (2021-02-04)
