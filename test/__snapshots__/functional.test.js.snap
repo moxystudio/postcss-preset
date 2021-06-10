@@ -141,5 +141,17 @@ exports[`should generate correct output for fixtures/example-1.css 1`] = `
 .buttonWrapper .button.tertiary:enabled:hover:not(.loading) span {
                     color: rgba(0, 0, 0, 0.8);
                 }
+
+
+
+[dir=\\"ltr\\"] .dirTest {
+        margin-left: 10px;
+    }
+
+
+
+[dir=\\"rtl\\"] .dirTest {
+        margin-right: 10px;
+    }
 "
 `;

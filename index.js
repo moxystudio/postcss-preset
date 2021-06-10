@@ -27,13 +27,14 @@ module.exports = (options = {}) => {
                 browsers: options.browsers,
                 stage: 3,
                 // Disable preserve so that the outputted CSS is consistent among all browsers,
-                // diminuishing the probability of discovering bugs only when testing in older browsers
+                // diminishing the probability of discovering bugs only when testing in older browsers
                 preserve: false,
-                // Enable features that we want, despite being proposals yet
+                // Enable/disable features that we want, despite they belong or not from the `stage` we are targeting.
                 features: {
                     'custom-properties': false,
                     'custom-media-queries': true,
                     'nesting-rules': true,
+                    'dir-pseudo-class': true,
                 },
                 insertAfter: options.cssVariables ?
                     { 'nesting-rules': require('postcss-css-variables')(options.cssVariables) } :

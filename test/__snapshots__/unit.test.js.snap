@@ -40,6 +40,7 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
+          "dir-pseudo-class": true,
           "nesting-rules": true,
         },
         "insertAfter": undefined,
@@ -93,6 +94,7 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
+          "dir-pseudo-class": true,
           "nesting-rules": true,
         },
         "insertAfter": Object {
@@ -154,6 +156,7 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
+          "dir-pseudo-class": true,
           "nesting-rules": true,
         },
         "insertAfter": Object {
@@ -213,6 +216,7 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
+          "dir-pseudo-class": true,
           "nesting-rules": true,
         },
         "insertAfter": Object {
@@ -270,6 +274,7 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
+          "dir-pseudo-class": true,
           "nesting-rules": true,
         },
         "insertAfter": Object {
@@ -331,6 +336,7 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
+          "dir-pseudo-class": true,
           "nesting-rules": true,
         },
         "insertAfter": Object {
@@ -392,6 +398,7 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
+          "dir-pseudo-class": true,
           "nesting-rules": true,
         },
         "insertAfter": Object {
@@ -451,6 +458,7 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
+          "dir-pseudo-class": true,
           "nesting-rules": true,
         },
         "insertAfter": Object {
@@ -512,6 +520,7 @@ Object {
         "features": Object {
           "custom-media-queries": true,
           "custom-properties": false,
+          "dir-pseudo-class": true,
           "nesting-rules": true,
         },
         "insertAfter": Object {

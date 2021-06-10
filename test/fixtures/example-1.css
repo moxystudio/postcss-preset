@@ -98,3 +98,13 @@
         }
     }
 }
+
+.dirTest {
+    &:dir(ltr) {
+        margin-left: 10px;
+    }
+
+    &:dir(rtl) {
+        margin-right: 10px;
+    }
+}
