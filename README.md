@@ -31,13 +31,15 @@ You might need to also install [postcss-cli](https://github.com/postcss/postcss-
 If you are developing a project that uses new CSS language features and must work on targets that do not yet support them, you have to transpile your styles. This preset provides a shareable PostCSS config as a preset that should be used across those projects at MOXY.
 
 - Uses [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env) to automatically support official CSS features in older browsers
-- Uses [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables) instead of [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) because it's [more complete](https://github.com/MadLittleMods/postcss-css-variables#interoperability-and-differences-from-postcss-custom-properties)
+  - Stage 3
+  - Custom @media queries
+  - Nesting rules
+  - `:dir` pseudo-class (useful for i18n)
 - Enables [postcss-import](https://github.com/postcss/postcss-import) so that `@import` statements are inlined
 - Optionally enables [postcss-url](https://github.com/postcss/postcss-url) so that `url()` statements are processed
 - Enables [postcss-mixins](https://github.com/postcss/postcss-mixins) so that you can define mixins
 - Enables [postcss-advanced-variables](https://github.com/jonathantneal/postcss-advanced-variables) add support for iterators (@for and @each) and conditionals (@if and @else)
 - Enables [postcss-calc](https://github.com/postcss/postcss-calc) so that `calc()` references are reduced whenever it's possible
-- Enables [postcss-color-function](https://github.com/postcss/postcss-color-function) so that you can use `alpha`, `lightness` and other color utilities
 
 
 ## Usage
@@ -65,7 +67,6 @@ Available options:
 | import | Options to pass to [postcss-import](https://github.com/postcss/postcss-import#path) | Object | `{}` |
 | mixins | Options to pass to [postcss-mixins](https://github.com/postcss/postcss-mixins#mixinsdir) | Object | `{ mixinsDir: './src/styles/mixins' }` |
 | advancedVariables | Options to pass to [postcss-advanced-variables](https://github.com/jonathantneal/postcss-advanced-variables#options) | Object | `{}`¹ |
-| cssVariables | Options to pass to [postcss-css-variables](https://github.com/MadLittleMods/postcss-css-variables), false disables the plugin | Object/boolean | `{ preserveAtRulesOrder: true }` |
 | url | Options to pass to [postcss-url](https://github.com/postcss/postcss-url), false disables any transpilation of `url()` declarations | Array/Object/boolean | `{ url: 'rebase' }` |
 | browsers | Supported browsers list to pass to [postcss-cssnext](https://github.com/MoOx/postcss-cssnext) | Array | `['extends browserslist-config-google/modern']`, see [browserslist-config-google](https://github.com/awkaiser/browserslist-config-google) (modern)  |
 

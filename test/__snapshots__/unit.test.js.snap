@@ -1,65 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should disable postcss-css-variables if options.cssVariables is false 1`] = `
-Object {
-  "plugins": Array [
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-import/index.js",
-      Object {},
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-url/src/index.js",
-      Object {
-        "url": "rebase",
-      },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-mixins/index.js",
-      Object {
-        "mixinsDir": "./src/styles/mixins",
-      },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-advanced-variables/index.js",
-      Object {
-        "disable": "@mixin, @include, @content, @import",
-      },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-preset-env/index.js",
-      Object {
-        "autoprefixer": Object {
-          "overrideBrowserslist": Array [
-            "extends browserslist-config-google",
-          ],
-          "remove": false,
-        },
-        "browsers": Array [
-          "extends browserslist-config-google",
-        ],
-        "features": Object {
-          "custom-media-queries": true,
-          "custom-properties": false,
-          "dir-pseudo-class": true,
-          "nesting-rules": true,
-        },
-        "insertAfter": undefined,
-        "preserve": false,
-        "stage": 3,
-      },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
-      Object {},
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
-      Object {},
-    ],
-  ],
-}
-`;
-
 exports[`should disable postcss-url if options.url is false 1`] = `
 Object {
   "plugins": Array [
@@ -97,16 +37,9 @@ Object {
           "dir-pseudo-class": true,
           "nesting-rules": true,
         },
-        "insertAfter": Object {
-          "nesting-rules": [Function],
-        },
         "preserve": false,
         "stage": 3,
       },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
-      Object {},
     ],
     Array [
       "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
@@ -159,16 +92,9 @@ Object {
           "dir-pseudo-class": true,
           "nesting-rules": true,
         },
-        "insertAfter": Object {
-          "nesting-rules": [Function],
-        },
         "preserve": false,
         "stage": 3,
       },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
-      Object {},
     ],
     Array [
       "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
@@ -219,16 +145,9 @@ Object {
           "dir-pseudo-class": true,
           "nesting-rules": true,
         },
-        "insertAfter": Object {
-          "nesting-rules": [Function],
-        },
         "preserve": false,
         "stage": 3,
       },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
-      Object {},
     ],
     Array [
       "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
@@ -277,78 +196,9 @@ Object {
           "dir-pseudo-class": true,
           "nesting-rules": true,
         },
-        "insertAfter": Object {
-          "nesting-rules": [Function],
-        },
         "preserve": false,
         "stage": 3,
       },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
-      Object {},
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
-      Object {},
-    ],
-  ],
-}
-`;
-
-exports[`should pass options.cssVariables to postcss-css-variables 1`] = `
-Object {
-  "plugins": Array [
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-import/index.js",
-      Object {},
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-url/src/index.js",
-      Object {
-        "url": "rebase",
-      },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-mixins/index.js",
-      Object {
-        "mixinsDir": "./src/styles/mixins",
-      },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-advanced-variables/index.js",
-      Object {
-        "disable": "@mixin, @include, @content, @import",
-      },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-preset-env/index.js",
-      Object {
-        "autoprefixer": Object {
-          "overrideBrowserslist": Array [
-            "extends browserslist-config-google",
-          ],
-          "remove": false,
-        },
-        "browsers": Array [
-          "extends browserslist-config-google",
-        ],
-        "features": Object {
-          "custom-media-queries": true,
-          "custom-properties": false,
-          "dir-pseudo-class": true,
-          "nesting-rules": true,
-        },
-        "insertAfter": Object {
-          "nesting-rules": [Function],
-        },
-        "preserve": false,
-        "stage": 3,
-      },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
-      Object {},
     ],
     Array [
       "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
@@ -401,16 +251,9 @@ Object {
           "dir-pseudo-class": true,
           "nesting-rules": true,
         },
-        "insertAfter": Object {
-          "nesting-rules": [Function],
-        },
         "preserve": false,
         "stage": 3,
       },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
-      Object {},
     ],
     Array [
       "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
@@ -461,16 +304,9 @@ Object {
           "dir-pseudo-class": true,
           "nesting-rules": true,
         },
-        "insertAfter": Object {
-          "nesting-rules": [Function],
-        },
         "preserve": false,
         "stage": 3,
       },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
-      Object {},
     ],
     Array [
       "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",
@@ -523,16 +359,9 @@ Object {
           "dir-pseudo-class": true,
           "nesting-rules": true,
         },
-        "insertAfter": Object {
-          "nesting-rules": [Function],
-        },
         "preserve": false,
         "stage": 3,
       },
-    ],
-    Array [
-      "<PROJECT_ROOT>/node_modules/postcss-color-function/index.js",
-      Object {},
     ],
     Array [
       "<PROJECT_ROOT>/node_modules/postcss-calc/dist/index.js",

@@ -36,9 +36,6 @@ module.exports = (options = {}) => {
                     'nesting-rules': true,
                     'dir-pseudo-class': true,
                 },
-                insertAfter: options.cssVariables ?
-                    { 'nesting-rules': require('postcss-css-variables')(options.cssVariables) } :
-                    undefined,
                 autoprefixer: {
                     // We don't use prefixes unless they are really necessary, e.g.: when dealing with quirks
                     // Therefore, we disable removing them
@@ -47,8 +44,6 @@ module.exports = (options = {}) => {
                     overrideBrowserslist: options.browsers,
                 },
             },
-            // Add support for `alpha()` and other color utilities
-            [require.resolve('postcss-color-function')]: {},
             // Lets you reduce calc() references whenever it's possible
             [require.resolve('postcss-calc')]: {},
         },

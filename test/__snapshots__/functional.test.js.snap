@@ -1,145 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should generate correct output for fixtures/example-1.css 1`] = `
-".image {
+":root {
+    --color-red: red;
+    --color-red-rgb: 255, 0, 0;
+    --padding: 20px;
+    --margin-top: 10px;
+    --image-url: url(\\"data:image/png;base64,\\");
+    --color-white: #fff;
+    --color-white-rgb: 255, 255, 255;
+};
+
+
+
+@media (min-width: 60px) {
+    :root {
+        --padding: 30px;
+    };
+}
+
+
+
+.image {
     position: absolute;
-        top: 20px;
+        top: var(--padding);
         right: 10px;
     font-family: Verdana;
 
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    color: red;
+    color: var(--color-red);
     background: url(\\"data:image/png;base64,\\");
     background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
     background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-    padding: 40px;
-    margin-top: calc(10px + 10vh);
+    padding: calc(var(--padding)*2);
+    margin-top: calc(var(--margin-top) + 10vh);
+    margin-bottom: 10px;
         border-color: blue
 }
 
 
 
-@media (min-width: 60px) {
-
-
-
-    .image {
-    padding: 60px
-    }
-}
-
-
-
-@media (min-width: 60px) {
-
-
-
-    .image {
-        top: 30px
-    }
-}
-
-
-
-.image .bar a {
+.image .bar a,
+        .image .bar .link {
             font-family: Verdana;
 
-            color: red;
-            background: url(\\"data:image/png;base64,\\");
-            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            padding: 40px;
+            color: var(--color-red);
+            background: var(--image-url);
+            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, var(--image-url) 2x);
+            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, var(--image-url) 2x);
+            padding: calc(var(--padding)*2);
                 border-color: blue
         }
 
 
 
-@media (min-width: 60px) {
-
-
-
-    .image .bar a {
-            padding: 60px
-    }
-}
-
-
-
-.image .bar .link {
-            font-family: Verdana;
-
-            color: red;
-            background: url(\\"data:image/png;base64,\\");
-            background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-            padding: 40px;
-                border-color: blue
-        }
-
-
-
-@media (min-width: 60px) {
-
-
-
-    .image .bar .link {
-            padding: 60px
-    }
-}
-
-
-
-.image .bar a:hover {
+.image .bar a:hover, .image .bar .link:hover {
                 font-family: Verdana;
 
-                color: red;
+                color: var(--color-red);
                 background: url(\\"data:image/png;base64,\\");
                 background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
                 background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                padding: 40px;
+                padding: calc(var(--padding)*2);
                     border-color: blue
             }
-
-
-
-@media (min-width: 60px) {
-
-
-
-    .image .bar a:hover {
-                padding: 60px
-    }
-}
-
-
-
-.image .bar .link:hover {
-                font-family: Verdana;
-
-                color: red;
-                background: url(\\"data:image/png;base64,\\");
-                background-image: -webkit-image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                background-image: image-set(url(\\"data:image/png;base64,\\") 1x, url(\\"data:image/png;base64,\\") 2x);
-                padding: 40px;
-                    border-color: blue
-            }
-
-
-
-@media (min-width: 60px) {
-
-
-
-    .image .bar .link:hover {
-                padding: 60px
-    }
-}
 
 
 
 .buttonWrapper .button.tertiary:enabled:hover:not(.loading) span {
-                    color: rgba(0, 0, 0, 0.8);
+                    color: rgba(var(--color-white-rgb), 0.8);
                 }
 
 
