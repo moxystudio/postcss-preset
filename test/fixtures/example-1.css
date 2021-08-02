@@ -1,9 +1,11 @@
 :root {
     --color-red: red;
+    --color-red-rgb: 255, 0, 0;
     --padding: 20px;
     --margin-top: 10px;
     --image-url: url("image.png");
-    --color-white: #000;
+    --color-white: #fff;
+    --color-white-rgb: 255, 255, 255;
 };
 
 
@@ -51,6 +53,7 @@
     background-image: image-set(url("image.png") 1x, url("image.png") 2x);
     padding: calc(var(--padding) * 2);
     margin-top: calc(var(--margin-top) + 10vh);
+    margin-bottom: calc(5px + 5px);
 
     @if 3 < 5 {
         border-color: blue;
@@ -92,7 +95,7 @@
         &.tertiary {
             &:enabled:hover:not(.loading) {
                 & span {
-                    color: color(var(--color-white) alpha(0.8));
+                    color: rgba(var(--color-white-rgb), 0.8);
                 }
             }
         }
