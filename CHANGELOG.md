@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/moxystudio/postcss-preset/compare/v4.6.0...v5.0.0) (2021-08-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove postcss-css-variables and postcss-color-func plugins
+
+Use native css vars because all our target browsers support them.
+
+After years of developing projects, I've came across various bugs
+with postcss-css-variables, especially when CSS variable values change
+with media queries and then these are used inside other media queries
+with calc.
+Also, the output tends to be more verbose in those situations as a lot of
+media queries combinations are outputted.
+
+The only downside is that we can no longer use postcss-color-func,
+which gave us utilities to manipulate colors, such as alpha, darken andlighten.
+
+However, alpha is the most used one by far, and we can have the same result
+with rgba + css var with rgb.
+
+### Features
+
+* embrace native css variables ([#45](https://github.com/moxystudio/postcss-preset/issues/45)) ([0557e10](https://github.com/moxystudio/postcss-preset/commit/0557e108cfcef84cc934e11fd665aa0bde21336c))
+
 ## [4.6.0](https://github.com/moxystudio/postcss-preset/compare/v4.5.3...v4.6.0) (2021-06-10)
 
 
